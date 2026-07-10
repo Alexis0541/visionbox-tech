@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StreamColombia | IPTV Premium</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;500;600;700;800&family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sora: ['Sora', 'sans-serif'],
+                        manrope: ['Manrope', 'sans-serif'],
+                    },
+                    colors: {
+                        midnight: '#0a0a1a',
+                        deep: '#141432',
+                        navy: '#1e1e5a',
+                        indigo: {
+                            500: '#4f46e5',
+                            400: '#6366f1',
+                            300: '#818cf8',
+                            600: '#3730a3',
+                        },
+                        neon: '#4f46e5',
+                    },
+                    borderRadius: {
+                        'card': '8px',
+                    },
+                    backgroundImage: {
+                        'radial-dark': 'radial-gradient(ellipse at 50% 0%, #1e1e5a 0%, #0a0a1a 70%)',
+                        'radial-hero': 'radial-gradient(ellipse at 60% 40%, #1e1e5a 0%, #141432 40%, #0a0a1a 80%)',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        ::-webkit-scrollbar { display: none; }
+        * { scrollbar-width: none; }
+
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #0a0a1a;
+            color: #fff;
+            overflow-x: hidden;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: 'Sora', sans-serif;
+        }
+
+        /* Glass Header */
+        .glass-header {
+            background: rgba(10, 10, 26, 0.3);
+            backdrop-filter: blur(0px);
+            -webkit-backdrop-filter: blur(0px);
+            transition: backdrop-filter 0.4s ease, background 0.4s ease, box-shadow 0.4s ease;
+            border-bottom: 1px solid transparent;
+        }
+
+        .glass-header.scrolled {
+            background: rgba(10, 10, 26, 0.85);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-bottom: 1px solid rgba(79, 70, 229, 0.2);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+        }
+
+        /* Neon glow effects */
+        .neon-glow {
+            box-shadow: 0 0 20px rgba(79, 70, 229, 0.5), 0 0 40px rgba(79, 70, 229, 0.2);
+        }
+
+        .neon-text {
+            text-shadow: 0 0 20px rgba(99, 102, 241, 0.8);
+        }
+
+        .neon-border {
+            border: 1.5px solid #4f46e5;
+            box-shadow: 0 0 20px rgba(79, 70, 229, 0.4), inset 0 0 20px rgba(79, 70, 229, 0.05);
+        }
+
+        /* Glassmorphic cards */
+        .glass-card {
+            background: rgba(20, 20, 50, 0.6);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border: 1px solid rgba(79, 70, 229, 0.2);
+        }
+
+        .glass-card-pricing {
+            background: rgba(14, 14, 35, 0.8);
+            backdrop-filter: blur(24px);
+            -webkit-backdrop-filter: blur(24px);
+            border: 1px solid rgba(79, 70, 229, 0.15);
+        }
+
+        /* Marquee */
+        .marquee-wrapper {
+            overflow: hidden;
+            width: 100%;
+        }
+
+        .marquee-track {
+            display: flex;
+            animation: marquee-scroll 30s linear infinite;
+            width: max-content;
+        }
+
+        @keyframes marquee-scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+
+        /* Status pulse */
+        .pulse-dot {
+            animation: pulse-anim 2s infinite;
+        }
+
+        @keyframes pulse-anim {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.6; transform: scale(1.3); }
+        }
+
+        /* Popular card scale */
+        .popular-card {
+            transform: scale(1.05);
+            z-index: 10;
+        }
+
+        /* Gradient text */
+        .gradient-text {
+            background: linear-gradient(135deg, #818cf8 0%, #4f46e5 50%, #6366f1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        /* Feature icon container */
+        .feature-icon-wrap {
+            background: linear-gradient(135deg, rgba(79, 70, 229, 0.15) 0%, rgba(30, 30, 90, 0.3) 100%);
+            border: 1.5px solid rgba(79, 70, 229, 0.25);
+        }
+
+        /* Hero gradient */
+        .hero-bg {
+            background: radial-gradient(ellipse at 60% 30%, #1e1e5a 0%, #141432 40%, #0a0a1a 80%);
+        }
+
+        /* Compatibility badge */
+        .compat-badge {
+            background: rgba(20, 20, 50, 0.7);
+            border: 1px solid rgba(79, 70, 229, 0.2);
+            backdrop-filter: blur(10px);
+        }
+
+        /* Content mosaic overlay */
+        .mosaic-overlay {
+            background: linear-gradient(to top, #0a0a1a 0%, transparent 40%);
+        }
+
+        /* Save badge */
+        .save-badge {
+            background: linear-gradient(135deg, #4f46e5, #6366f1);
+            box-shadow: 0 0 16px rgba(79, 70, 229, 0.6);
+        }
+
+        /* Floating animation */
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(-2deg); }
+            50% { transform: translateY(-16px) rotate(-2deg); }
+        }
+
+        @keyframes float-mobile {
+            0%, 100% { transform: translateY(0px) rotate(4deg); }
+            50% { transform: translateY(-10px) rotate(4deg); }
+        }
+
+        .float-tv { animation: float 6s ease-in-out infinite; }
+        .float-mobile { animation: float-mobile 5s ease-in-out infinite 0.5s; }
+
+        /* Particle dots background */
+        .dot-grid {
+            background-image: radial-gradient(rgba(79, 70, 229, 0.15) 1px, transparent 1px);
+            background-size: 40px 40px;
+        }
+
+        /* Smooth hover */
+        .btn-primary {
+            background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);
+            transition: all 0.3s ease;
+        }
+        .btn-primary:hover {
+            box-shadow: 0 0 30px rgba(79, 70, 229, 0.6);
+            transform: translateY(-2px);
+        }
+
+        .btn-ghost {
+            border: 1.5px solid rgba(255, 255, 255, 0.25);
+            transition: all 0.3s ease;
+        }
+        .btn-ghost:hover {
+            border-color: rgba(79, 70, 229, 0.6);
+            background: rgba(79, 70, 229, 0.1);
+        }
+
+        /* Nav link hover */
+        .nav-link {
+            position: relative;
+            color: rgba(255,255,255,0.7);
+            transition: color 0.3s;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 1.5px;
+            background: #4f46e5;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover { color: #fff; }
+        .nav-link:hover::after { width: 100%; }
+
+        .language-switcher {
+            min-width: 148px;
+            height: 36px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 0 10px;
+            border-radius: 8px;
+            background: rgba(79,70,229,0.1);
+            border: 1px solid rgba(79,70,229,0.25);
+        }
+
+        .language-switcher .fa-language {
+            color: #93c5fd;
+            font-size: 14px;
+            flex-shrink: 0;
+        }
+
+        .language-select {
+            min-width: 104px;
+            width: 100%;
+            margin: 0 !important;
+            background: transparent;
+            border: 0;
+            outline: 0;
+            color: rgba(255,255,255,0.82);
+            font-family: 'Manrope', sans-serif;
+            font-size: 12px;
+            font-weight: 700;
+            cursor: pointer;
+        }
+
+        .language-select option {
+            color: #111827;
+            background: #fff;
+        }
+
+        .google-translate-source,
+        .goog-te-gadget,
+        .goog-logo-link {
+            display: none !important;
+        }
+
+        body {
+            top: 0 !important;
+        }
+
+        .goog-te-banner-frame,
+        iframe.goog-te-banner-frame,
+        .skiptranslate iframe {
+            display: none !important;
+        }
+    </style>
+</head>
+<body class="bg-midnight">
+<div id="google_translate_element" class="google-translate-source"></div>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header id="header" class="glass-header fixed top-0 left-0 right-0 z-50 px-4 py-0">
+    <div class="max-w-7xl mx-auto flex items-center justify-between h-16 md:h-18">
+        <!-- Logo -->
+        <div class="flex items-center gap-2.5">
+            <div class="w-8 h-8 rounded-card bg-indigo-500 flex items-center justify-center neon-glow flex-shrink-0">
+                <i class="fa-solid fa-play text-white text-xs"></i>
+            </div>
+            <span class="font-sora font-700 text-white text-lg tracking-tight">Stream<span class="gradient-text">Colombia</span></span>
+        </div>
+
+        <!-- Nav Links (desktop) -->
+        <nav class="hidden md:flex items-center gap-8">
+            <a href="#features" class="nav-link text-sm font-manrope font-500">Características</a>
+            <a href="#content" class="nav-link text-sm font-manrope font-500">Contenido</a>
+            <a href="#pricing" class="nav-link text-sm font-manrope font-500">Precios</a>
+            <a href="#compatibility" class="nav-link text-sm font-manrope font-500">Compatibilidad</a>
+        </nav>
+
+        <!-- Status + CTA -->
+        <div class="flex items-center gap-4">
+            <div class="language-switcher hidden lg:flex">
+                <i class="fa-solid fa-language"></i>
+                <select id="language-select" class="language-select" aria-label="Cambiar idioma">
+                    <option value="es">Español</option>
+                    <option value="en">English</option>
+                    <option value="pt">Português</option>
+                    <option value="fr">Français</option>
+                    <option value="de">Deutsch</option>
+                    <option value="it">Italiano</option>
+                </select>
+            </div>
+            <!-- Server Status -->
+            <div class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full" style="background: rgba(79,70,229,0.1); border: 1px solid rgba(79,70,229,0.25);">
+                <div class="pulse-dot w-2 h-2 rounded-full bg-blue-400"></div>
+                <span class="text-xs font-manrope text-blue-300 font-500 whitespace-nowrap">Servers Online</span>
+            </div>
+            <a href="#pricing" class="btn-primary hidden md:inline-flex items-center gap-2 px-4 py-2 rounded-card text-sm font-manrope font-600 text-white">
+                <i class="fa-solid fa-bolt text-xs"></i> Suscribirse
+            </a>
+            <!-- Mobile menu icon -->
+            <button id="mobile-menu-toggle" class="md:hidden text-white/70 hover:text-white" aria-label="Abrir menu" aria-expanded="false">
+                <i class="fa-solid fa-bars text-lg"></i>
+            </button>
+        </div>
+    </div>
+    <nav id="mobile-menu" class="hidden md:hidden max-w-7xl mx-auto pb-4">
+        <div class="glass-card rounded-card p-3 grid gap-1">
+            <div class="language-switcher mb-2">
+                <i class="fa-solid fa-language"></i>
+                <select id="language-select-mobile" class="language-select" aria-label="Cambiar idioma">
+                    <option value="es">Español</option>
+                    <option value="en">English</option>
+                    <option value="pt">Português</option>
+                    <option value="fr">Français</option>
+                    <option value="de">Deutsch</option>
+                    <option value="it">Italiano</option>
+                </select>
+            </div>
+            <a href="#features" class="mobile-nav-link px-3 py-2 rounded-card text-sm font-manrope font-600 text-white/80 hover:bg-indigo-500/15">Características</a>
+            <a href="#content" class="mobile-nav-link px-3 py-2 rounded-card text-sm font-manrope font-600 text-white/80 hover:bg-indigo-500/15">Contenido</a>
+            <a href="#pricing" class="mobile-nav-link px-3 py-2 rounded-card text-sm font-manrope font-600 text-white/80 hover:bg-indigo-500/15">Precios</a>
+            <a href="#compatibility" class="mobile-nav-link px-3 py-2 rounded-card text-sm font-manrope font-600 text-white/80 hover:bg-indigo-500/15">Compatibilidad</a>
+        </div>
+    </nav>
+</header>
+
+<!-- ============================================================
+     HERO SECTION
+     ============================================================ -->
+<section id="hero" class="hero-bg dot-grid relative overflow-hidden pt-16">
+    <div class="absolute inset-x-0 top-0 h-px bg-indigo-400/30"></div>
+
+    <div class="max-w-7xl mx-auto px-4 py-20 md:py-28 lg:py-32 flex flex-col lg:flex-row items-center gap-12 lg:gap-0">
+        <!-- Left: Text Content -->
+        <div class="flex-1 text-center lg:text-left z-10 lg:pr-8">
+            <!-- Badge -->
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full mb-6" style="background: rgba(79,70,229,0.15); border: 1px solid rgba(79,70,229,0.35);">
+                <i class="fa-solid fa-star text-indigo-300 text-xs"></i>
+                <span class="text-xs font-manrope font-600 text-indigo-300 tracking-wider uppercase">Premium IPTV · +20,000 Canales</span>
+            </div>
+
+            <h1 class="font-sora font-800 text-4xl md:text-5xl lg:text-6xl text-white leading-tight mb-6">
+                La mejor<br>
+                experiencia de<br>
+                <span class="gradient-text neon-text">TV en vivo</span> y VOD.
+            </h1>
+
+            <p class="font-manrope text-base md:text-lg text-white/60 max-w-lg mx-auto lg:mx-0 mb-10 leading-relaxed">
+                Más de <strong class="text-white/90">20,000 canales</strong> y contenido premium sin interrupciones. Transmite en calidad 4K desde cualquier dispositivo, en cualquier lugar.
+            </p>
+
+            <div class="flex flex-col sm:flex-row gap-3 justify-center lg:justify-start">
+                <a href="#pricing" class="btn-primary inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-card text-sm font-manrope font-700 text-white">
+                    <i class="fa-solid fa-bolt"></i> Comenzar Ahora
+                </a>
+                <a href="#content" class="btn-ghost inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-card text-sm font-manrope font-600 text-white/80">
+                    <i class="fa-regular fa-rectangle-list"></i> Ver lista de canales
+                </a>
+            </div>
+
+            <!-- Stats -->
+            <div class="flex flex-wrap items-center gap-6 mt-10 justify-center lg:justify-start">
+                <div>
+                    <div class="font-sora font-700 text-2xl text-white">20K+</div>
+                    <div class="font-manrope text-xs text-white/50 mt-0.5">Canales en vivo</div>
+                </div>
+                <div class="w-px h-8 bg-white/10"></div>
+                <div>
+                    <div class="font-sora font-700 text-2xl text-white">60K+</div>
+                    <div class="font-manrope text-xs text-white/50 mt-0.5">Películas & Series</div>
+                </div>
+                <div class="w-px h-8 bg-white/10"></div>
+                <div>
+                    <div class="font-sora font-700 text-2xl text-white">99.9%</div>
+                    <div class="font-manrope text-xs text-white/50 mt-0.5">Uptime garantizado</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right: Device Mockups -->
+        <div class="flex-1 relative flex items-center justify-center min-h-[320px] md:min-h-[420px] lg:min-h-[500px]">
+            <!-- TV Mockup -->
+            <div class="float-tv relative z-10" style="filter: drop-shadow(0 40px 60px rgba(79,70,229,0.4));">
+                <div class="w-72 md:w-96 lg:w-[420px] rounded-card overflow-hidden" style="border: 3px solid rgba(79,70,229,0.4); box-shadow: 0 0 60px rgba(79,70,229,0.25), inset 0 0 20px rgba(0,0,0,0.5);">
+                    <img class="w-full h-48 md:h-60 lg:h-64 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_11d2f7fbea_6387a65c3a571715.png" alt="dark cinematic TV screen showing stunning Netflix-style movie hero banner with dramatic lighting, de" />
+                    <!-- TV stand -->
+                </div>
+                <div class="mx-auto w-16 h-2 mt-1 rounded-sm" style="background: rgba(79,70,229,0.3);"></div>
+                <div class="mx-auto w-24 h-1.5 rounded-sm" style="background: rgba(79,70,229,0.2);"></div>
+            </div>
+
+            <!-- Mobile Mockup (overlapping) -->
+            <div class="float-mobile absolute -bottom-4 -right-2 md:right-4 z-20" style="filter: drop-shadow(0 20px 40px rgba(79,70,229,0.5));">
+                <div class="w-20 md:w-28 rounded-xl overflow-hidden" style="border: 2px solid rgba(79,70,229,0.5); box-shadow: 0 0 30px rgba(79,70,229,0.3);">
+                    <img class="w-full h-36 md:h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_8c7ed2c8d6_44c64e5139bb4246.png" alt="smartphone screen showing IPTV streaming app with dark UI, sports channel list, dark background, viv" />
+                </div>
+            </div>
+
+            <!-- Glow orb behind devices -->
+            <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <div class="w-64 h-64 rounded-full opacity-25 blur-3xl" style="background: radial-gradient(circle, #4f46e5, transparent);"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bottom fade -->
+    <div class="absolute bottom-0 left-0 right-0 h-24 pointer-events-none" style="background: linear-gradient(to bottom, transparent, #0a0a1a);"></div>
+</section>
+
+<!-- ============================================================
+     MARQUEE — SPORTS & STUDIOS
+     ============================================================ -->
+<section id="marquee" class="relative py-8 overflow-hidden" style="background: #0a0a1a; border-top: 1px solid rgba(79,70,229,0.1); border-bottom: 1px solid rgba(79,70,229,0.1);">
+    <div class="marquee-wrapper">
+        <div class="marquee-track">
+            <!-- Set 1 -->
+            <div class="flex items-center gap-12 px-6">
+                <div class="flex items-center gap-2.5 opacity-50 hover:opacity-80 transition-opacity">
+                    <i class="fa-solid fa-futbol text-indigo-400 text-xl"></i>
+                    <span class="font-sora font-700 text-white text-sm tracking-widest uppercase whitespace-nowrap">La Liga</span>
+                </div>
+                <div class="w-px h-5 bg-white/10"></div>
+                <div class="flex items-center gap-2.5 opacity-50 hover:opacity-80 transition-opacity">
+                    <i class="fa-solid fa-shield-halved text-indigo-400 text-xl"></i>
+                    <span class="font-sora font-700 text-white text-sm tracking-widest uppercase whitespace-nowrap">Premier League</span>
+                </div>
+                <div class="w-px h-5 bg-white/10"></div>
+                <div class="flex items-center gap-2.5 opacity-50 hover:opacity-80 transition-opacity">
+                    <i class="fa-solid fa-basketball text-indigo-400 text-xl"></i>
+                    <span class="font-sora font-700 text-white text-sm tracking-widest uppercase whitespace-nowrap">NBA</span>
+                </div>
+                <div class="w-px h-5 bg-white/10"></div>
+                <div class="flex items-center gap-2.5 opacity-50 hover:opacity-80 transition-opacity">
+                    <i class="fa-solid fa-trophy text-indigo-400 text-xl"></i>
+                    <span class="font-sora font-700 text-white text-sm tracking-widest uppercase whitespace-nowrap">UEFA Champions</span>
+                </div>
+                <div class="w-px h-5 bg-white/10"></div>
+                <div class="flex items-center gap-2.5 opacity-50 hover:opacity-80 transition-opacity">
+                    <i class="fa-solid fa-film text-indigo-400 text-xl"></i>
+                    <span class="font-sora font-700 text-white text-sm tracking-widest uppercase whitespace-nowrap">HBO Max</span>
+                </div>
+                <div class="w-px h-5 bg-white/10"></div>
+                <div class="flex items-center gap-2.5 opacity-50 hover:opacity-80 transition-opacity">
+                    <i class="fa-solid fa-star text-indigo-400 text-xl"></i>
+                    <span class="font-sora font-700 text-white text-sm tracking-widest uppercase whitespace-nowrap">Disney+</span>
+                </div>
+                <div class="w-px h-5 bg-white/10"></div>
+                <div class="flex items-center gap-2.5 opacity-50 hover:opacity-80 transition-opacity">
+                    <i class="fa-solid fa-baseball-bat-ball text-indigo-400 text-xl"></i>
+                    <span class="font-sora font-700 text-white text-sm tracking-widest uppercase whitespace-nowrap">MLB</span>
+                </div>
+                <div class="w-px h-5 bg-white/10"></div>
+                <div class="flex items-center gap-2.5 opacity-50 hover:opacity-80 transition-opacity">
+                    <i class="fa-solid fa-clapperboard text-indigo-400 text-xl"></i>
+                    <span class="font-sora font-700 text-white text-sm tracking-widest uppercase whitespace-nowrap">Universal</span>
+                </div>
+                <div class="w-px h-5 bg-white/10"></div>
+                <div class="flex items-center gap-2.5 opacity-50 hover:opacity-80 transition-opacity">
+                    <i class="fa-solid fa-football text-indigo-400 text-xl"></i>
+                    <span class="font-sora font-700 text-white text-sm tracking-widest uppercase whitespace-nowrap">NFL</span>
+                </div>
+                <div class="w-px h-5 bg-white/10"></div>
+                <div class="flex items-center gap-2.5 opacity-50 hover:opacity-80 transition-opacity">
+                    <i class="fa-solid fa-tv text-indigo-400 text-xl"></i>
+                    <span class="font-sora font-700 text-white text-sm tracking-widest uppercase whitespace-nowrap">ESPN</span>
+                </div>
+                <div class="w-px h-5 bg-white/10"></div>
+                <div class="flex items-center gap-2.5 opacity-50 hover:opacity-80 transition-opacity">
+                    <i class="fa-solid fa-bolt text-indigo-400 text-xl"></i>
+                    <span class="font-sora font-700 text-white text-sm tracking-widest uppercase whitespace-nowrap">Fox Sports</span>
+                </div>
+                <div class="w-px h-5 bg-white/10"></div>
+            </div>
+            <!-- Set 2 (clone for seamless loop) -->
+            <div class="flex items-center gap-12 px-6">
+                <div class="flex items-center gap-2.5 opacity-50 hover:opacity-80 transition-opacity">
+                    <i class="fa-solid fa-futbol text-indigo-400 text-xl"></i>
+                    <span class="font-sora font-700 text-white text-sm tracking-widest uppercase whitespace-nowrap">La Liga</span>
+                </div>
+                <div class="w-px h-5 bg-white/10"></div>
+                <div class="flex items-center gap-2.5 opacity-50 hover:opacity-80 transition-opacity">
+                    <i class="fa-solid fa-shield-halved text-indigo-400 text-xl"></i>
+                    <span class="font-sora font-700 text-white text-sm tracking-widest uppercase whitespace-nowrap">Premier League</span>
+                </div>
+                <div class="w-px h-5 bg-white/10"></div>
+                <div class="flex items-center gap-2.5 opacity-50 hover:opacity-80 transition-opacity">
+                    <i class="fa-solid fa-basketball text-indigo-400 text-xl"></i>
+                    <span class="font-sora font-700 text-white text-sm tracking-widest uppercase whitespace-nowrap">NBA</span>
+                </div>
+                <div class="w-px h-5 bg-white/10"></div>
+                <div class="flex items-center gap-2.5 opacity-50 hover:opacity-80 transition-opacity">
+                    <i class="fa-solid fa-trophy text-indigo-400 text-xl"></i>
+                    <span class="font-sora font-700 text-white text-sm tracking-widest uppercase whitespace-nowrap">UEFA Champions</span>
+                </div>
+                <div class="w-px h-5 bg-white/10"></div>
+                <div class="flex items-center gap-2.5 opacity-50 hover:opacity-80 transition-opacity">
+                    <i class="fa-solid fa-film text-indigo-400 text-xl"></i>
+                    <span class="font-sora font-700 text-white text-sm tracking-widest uppercase whitespace-nowrap">HBO Max</span>
+                </div>
+                <div class="w-px h-5 bg-white/10"></div>
+                <div class="flex items-center gap-2.5 opacity-50 hover:opacity-80 transition-opacity">
+                    <i class="fa-solid fa-star text-indigo-400 text-xl"></i>
+                    <span class="font-sora font-700 text-white text-sm tracking-widest uppercase whitespace-nowrap">Disney+</span>
+                </div>
+                <div class="w-px h-5 bg-white/10"></div>
+                <div class="flex items-center gap-2.5 opacity-50 hover:opacity-80 transition-opacity">
+                    <i class="fa-solid fa-baseball-bat-ball text-indigo-400 text-xl"></i>
+                    <span class="font-sora font-700 text-white text-sm tracking-widest uppercase whitespace-nowrap">MLB</span>
+                </div>
+                <div class="w-px h-5 bg-white/10"></div>
+                <div class="flex items-center gap-2.5 opacity-50 hover:opacity-80 transition-opacity">
+                    <i class="fa-solid fa-clapperboard text-indigo-400 text-xl"></i>
+                    <span class="font-sora font-700 text-white text-sm tracking-widest uppercase whitespace-nowrap">Universal</span>
+                </div>
+                <div class="w-px h-5 bg-white/10"></div>
+                <div class="flex items-center gap-2.5 opacity-50 hover:opacity-80 transition-opacity">
+                    <i class="fa-solid fa-football text-indigo-400 text-xl"></i>
+                    <span class="font-sora font-700 text-white text-sm tracking-widest uppercase whitespace-nowrap">NFL</span>
+                </div>
+                <div class="w-px h-5 bg-white/10"></div>
+                <div class="flex items-center gap-2.5 opacity-50 hover:opacity-80 transition-opacity">
+                    <i class="fa-solid fa-tv text-indigo-400 text-xl"></i>
+                    <span class="font-sora font-700 text-white text-sm tracking-widest uppercase whitespace-nowrap">ESPN</span>
+                </div>
+                <div class="w-px h-5 bg-white/10"></div>
+                <div class="flex items-center gap-2.5 opacity-50 hover:opacity-80 transition-opacity">
+                    <i class="fa-solid fa-bolt text-indigo-400 text-xl"></i>
+                    <span class="font-sora font-700 text-white text-sm tracking-widest uppercase whitespace-nowrap">Fox Sports</span>
+                </div>
+                <div class="w-px h-5 bg-white/10"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     FEATURES — THE PULSE
+     ============================================================ -->
+<section id="features" class="relative py-20 md:py-28" style="background: #0a0a1a;">
+    <div class="max-w-7xl mx-auto px-4">
+        <!-- Section Header -->
+        <div class="text-center mb-16">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full mb-5" style="background: rgba(79,70,229,0.1); border: 1px solid rgba(79,70,229,0.3);">
+                <i class="fa-solid fa-waveform-lines text-indigo-400 text-xs"></i>
+                <span class="text-xs font-manrope font-600 text-indigo-300 tracking-widest uppercase">The Pulse</span>
+            </div>
+            <h2 class="font-sora font-700 text-3xl md:text-4xl text-white mb-4">Tecnología de <span class="gradient-text">próxima generación</span></h2>
+            <p class="font-manrope text-white/50 text-base max-w-xl mx-auto leading-relaxed">Diseñado para ofrecer la experiencia de streaming más fluida y confiable del mercado.</p>
+        </div>
+
+        <!-- Feature Grid -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+
+            <!-- Card 1 -->
+            <div id="feat-1" class="glass-card rounded-card p-6 group hover:border-indigo-500/40 transition-all duration-300 hover:-translate-y-1">
+                <div class="feature-icon-wrap w-12 h-12 rounded-card flex items-center justify-center mb-5">
+                    <i class="fa-solid fa-rocket text-indigo-400 text-xl"></i>
+                </div>
+                <h3 class="font-sora font-700 text-white text-base mb-2">Instalación Instantánea</h3>
+                <p class="font-manrope text-white/50 text-sm leading-relaxed">Activa tu cuenta en minutos. Credenciales enviadas inmediatamente al pago. Sin complicaciones.</p>
+                <div class="mt-5 flex items-center gap-1.5 text-indigo-400 text-xs font-manrope font-600">
+                    <i class="fa-solid fa-circle-check text-xs"></i>
+                    <span>Activación en &lt;5 min</span>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div id="feat-2" class="glass-card rounded-card p-6 group hover:border-indigo-500/40 transition-all duration-300 hover:-translate-y-1">
+                <div class="feature-icon-wrap w-12 h-12 rounded-card flex items-center justify-center mb-5">
+                    <i class="fa-solid fa-gem text-indigo-400 text-xl"></i>
+                </div>
+                <h3 class="font-sora font-700 text-white text-base mb-2">Calidad 4K / Ultra HD</h3>
+                <p class="font-manrope text-white/50 text-sm leading-relaxed">Transmisión en resolución 4K, Full HD y HD adaptativa. Imagen nítida sin importar tu conexión.</p>
+                <div class="mt-5 flex items-center gap-1.5 text-indigo-400 text-xs font-manrope font-600">
+                    <i class="fa-solid fa-circle-check text-xs"></i>
+                    <span>4K · FHD · HD adaptativo</span>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div id="feat-3" class="glass-card rounded-card p-6 group hover:border-indigo-500/40 transition-all duration-300 hover:-translate-y-1">
+                <div class="feature-icon-wrap w-12 h-12 rounded-card flex items-center justify-center mb-5">
+                    <i class="fa-solid fa-shield-virus text-indigo-400 text-xl"></i>
+                </div>
+                <h3 class="font-sora font-700 text-white text-base mb-2">Tecnología Anti-Freeze</h3>
+                <p class="font-manrope text-white/50 text-sm leading-relaxed">Servidores de alta capacidad con failover automático. Sin cortes, sin buffering, sin interrupciones.</p>
+                <div class="mt-5 flex items-center gap-1.5 text-indigo-400 text-xs font-manrope font-600">
+                    <i class="fa-solid fa-circle-check text-xs"></i>
+                    <span>99.9% Uptime SLA</span>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div id="feat-4" class="glass-card rounded-card p-6 group hover:border-indigo-500/40 transition-all duration-300 hover:-translate-y-1">
+                <div class="feature-icon-wrap w-12 h-12 rounded-card flex items-center justify-center mb-5">
+                    <i class="fa-solid fa-headset text-indigo-400 text-xl"></i>
+                </div>
+                <h3 class="font-sora font-700 text-white text-base mb-2">Soporte 24/7</h3>
+                <p class="font-manrope text-white/50 text-sm leading-relaxed">Equipo técnico disponible las 24 horas del día, los 7 días de la semana vía chat, WhatsApp y correo.</p>
+                <div class="mt-5 flex items-center gap-1.5 text-indigo-400 text-xs font-manrope font-600">
+                    <i class="fa-solid fa-circle-check text-xs"></i>
+                    <span>Respuesta &lt;10 min</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Secondary Features Row -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-5">
+            <div class="glass-card rounded-card px-5 py-4 flex items-center gap-3">
+                <i class="fa-solid fa-list text-indigo-400 text-base"></i>
+                <span class="font-manrope text-white/70 text-sm font-500">Guía EPG</span>
+            </div>
+            <div class="glass-card rounded-card px-5 py-4 flex items-center gap-3">
+                <i class="fa-solid fa-clock-rotate-left text-indigo-400 text-base"></i>
+                <span class="font-manrope text-white/70 text-sm font-500">TV en diferido</span>
+            </div>
+            <div class="glass-card rounded-card px-5 py-4 flex items-center gap-3">
+                <i class="fa-solid fa-users text-indigo-400 text-base"></i>
+                <span class="font-manrope text-white/70 text-sm font-500">Multi-pantalla</span>
+            </div>
+            <div class="glass-card rounded-card px-5 py-4 flex items-center gap-3">
+                <i class="fa-solid fa-lock text-indigo-400 text-base"></i>
+                <span class="font-manrope text-white/70 text-sm font-500">Control parental</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     CONTENT MOSAIC
+     ============================================================ -->
+<section id="content" class="relative py-20 md:py-28" style="background: linear-gradient(to bottom, #0a0a1a, #141432, #0a0a1a);">
+    <div class="max-w-7xl mx-auto px-4">
+        <!-- Section Header -->
+        <div class="text-center mb-14">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full mb-5" style="background: rgba(79,70,229,0.1); border: 1px solid rgba(79,70,229,0.3);">
+                <i class="fa-solid fa-layer-group text-indigo-400 text-xs"></i>
+                <span class="text-xs font-manrope font-600 text-indigo-300 tracking-widest uppercase">Biblioteca de Contenido</span>
+            </div>
+            <h2 class="font-sora font-700 text-3xl md:text-4xl text-white mb-4">Todo el contenido que <span class="gradient-text">amas</span></h2>
+            <p class="font-manrope text-white/50 text-base max-w-xl mx-auto">Películas, series, deportes, noticias y canales de todo el mundo. Una sola suscripción, acceso ilimitado.</p>
+        </div>
+
+        <!-- Category Tabs -->
+        <div class="flex items-center gap-3 mb-8 overflow-x-auto pb-2 justify-center flex-wrap">
+            <button class="btn-primary px-4 py-2 rounded-card text-xs font-manrope font-600 text-white whitespace-nowrap">Todos</button>
+            <button class="compat-badge px-4 py-2 rounded-card text-xs font-manrope font-500 text-white/60 hover:text-white transition-colors whitespace-nowrap">Películas</button>
+            <button class="compat-badge px-4 py-2 rounded-card text-xs font-manrope font-500 text-white/60 hover:text-white transition-colors whitespace-nowrap">Deportes</button>
+            <button class="compat-badge px-4 py-2 rounded-card text-xs font-manrope font-500 text-white/60 hover:text-white transition-colors whitespace-nowrap">Series</button>
+            <button class="compat-badge px-4 py-2 rounded-card text-xs font-manrope font-500 text-white/60 hover:text-white transition-colors whitespace-nowrap">Noticias</button>
+            <button class="compat-badge px-4 py-2 rounded-card text-xs font-manrope font-500 text-white/60 hover:text-white transition-colors whitespace-nowrap">Infantil</button>
+        </div>
+
+        <!-- Mosaic Grid -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
+
+            <!-- Large feature (spans 2 rows on lg) -->
+            <div class="lg:col-span-2 lg:row-span-2 relative overflow-hidden rounded-card group cursor-pointer h-48 md:h-56 lg:h-auto lg:min-h-[340px]" style="border: 1px solid rgba(79,70,229,0.15);">
+                <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_7c9c48fd56_ff659e42df17eaf5.png" alt="cinematic movie poster action thriller dark dramatic lighting heroes silhouette neon colors, vertica" />
+                <div class="absolute inset-0 mosaic-overlay opacity-80 group-hover:opacity-60 transition-opacity"></div>
+                <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(79,70,229,0.2) 0%, transparent 60%);"></div>
+                <div class="absolute bottom-4 left-4 right-4">
+                    <div class="flex items-center gap-2 mb-2">
+                        <span class="px-2 py-0.5 rounded text-xs font-manrope font-700 text-white" style="background: #4f46e5;">4K</span>
+                        <span class="text-white/60 text-xs font-manrope">Acción · 2024</span>
+                    </div>
+                    <p class="font-sora font-700 text-white text-base leading-tight">Estrenos Premium</p>
+                </div>
+                <div class="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity">
+                    <div class="w-8 h-8 rounded-full flex items-center justify-center" style="background: rgba(79,70,229,0.8);">
+                        <i class="fa-solid fa-play text-white text-xs ml-0.5"></i>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Grid items -->
+            <div class="relative overflow-hidden rounded-card group cursor-pointer h-40 md:h-48" style="border: 1px solid rgba(79,70,229,0.15);">
+                <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_26557b2651_1698ec481fcab2f3.png" alt="live soccer football match stadium aerial view dramatic lighting green pitch crowd night game, cinem" />
+                <div class="absolute inset-0 mosaic-overlay opacity-70 group-hover:opacity-40 transition-opacity"></div>
+                <div class="absolute bottom-3 left-3">
+                    <span class="flex items-center gap-1.5 px-2 py-0.5 rounded text-xs font-manrope font-700 text-white" style="background: rgba(220,38,38,0.9);"><span class="w-1.5 h-1.5 rounded-full bg-white inline-block"></span> EN VIVO</span>
+                    <p class="font-sora font-600 text-white text-sm mt-1">La Liga</p>
+                </div>
+            </div>
+
+            <div class="relative overflow-hidden rounded-card group cursor-pointer h-40 md:h-48" style="border: 1px solid rgba(79,70,229,0.15);">
+                <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_9ee1e12dd9_fa960ad63ddcf5f4.png" alt="NBA basketball game dramatic close up player dunking, professional sports photography, vibrant court" />
+                <div class="absolute inset-0 mosaic-overlay opacity-70 group-hover:opacity-40 transition-opacity"></div>
+                <div class="absolute bottom-3 left-3">
+                    <span class="flex items-center gap-1.5 px-2 py-0.5 rounded text-xs font-manrope font-700 text-white" style="background: rgba(220,38,38,0.9);"><span class="w-1.5 h-1.5 rounded-full bg-white inline-block"></span> EN VIVO</span>
+                    <p class="font-sora font-600 text-white text-sm mt-1">NBA</p>
+                </div>
+            </div>
+
+            <div class="relative overflow-hidden rounded-card group cursor-pointer h-40 md:h-48" style="border: 1px solid rgba(79,70,229,0.15);">
+                <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_5202b6a750_2f01cf03d96feaa8.png" alt="dark sci-fi thriller TV series poster moody cinematic atmosphere deep space neon, vertical format" />
+                <div class="absolute inset-0 mosaic-overlay opacity-70 group-hover:opacity-40 transition-opacity"></div>
+                <div class="absolute bottom-3 left-3">
+                    <span class="text-white/60 text-xs font-manrope">Sci-Fi · Serie</span>
+                    <p class="font-sora font-600 text-white text-sm mt-0.5">Series Premium</p>
+                </div>
+            </div>
+
+            <div class="relative overflow-hidden rounded-card group cursor-pointer h-40 md:h-48" style="border: 1px solid rgba(79,70,229,0.15);">
+                <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_dacd054053_36eec5353689e688.png" alt="boxing match dramatic arena lighting crowd championship fight night professional sports" />
+                <div class="absolute inset-0 mosaic-overlay opacity-70 group-hover:opacity-40 transition-opacity"></div>
+                <div class="absolute bottom-3 left-3">
+                    <span class="text-white/60 text-xs font-manrope">Deportes</span>
+                    <p class="font-sora font-600 text-white text-sm mt-0.5">Combates</p>
+                </div>
+            </div>
+
+            <div class="relative overflow-hidden rounded-card group cursor-pointer h-40 md:h-48" style="border: 1px solid rgba(79,70,229,0.15);">
+                <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_5c4ee1bebc_83d141f8f74a50b4.png" alt="children animation movie colorful vibrant cartoon characters bright colorful background family fun" />
+                <div class="absolute inset-0 mosaic-overlay opacity-50 group-hover:opacity-30 transition-opacity"></div>
+                <div class="absolute bottom-3 left-3">
+                    <span class="text-white/60 text-xs font-manrope">Infantil</span>
+                    <p class="font-sora font-600 text-white text-sm mt-0.5">Para Niños</p>
+                </div>
+            </div>
+
+            <div class="relative overflow-hidden rounded-card group cursor-pointer h-40 md:h-48" style="border: 1px solid rgba(79,70,229,0.15);">
+                <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_ee3fa81765_feb50a606e241102.png" alt="romantic drama movie poster couple silhouette golden hour cinematic photography elegant, dark backgr" />
+                <div class="absolute inset-0 mosaic-overlay opacity-70 group-hover:opacity-40 transition-opacity"></div>
+                <div class="absolute bottom-3 left-3">
+                    <span class="text-white/60 text-xs font-manrope">Drama</span>
+                    <p class="font-sora font-600 text-white text-sm mt-0.5">Películas HD</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Numbers row -->
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mt-10">
+            <div class="glass-card rounded-card p-5 text-center">
+                <div class="font-sora font-800 text-3xl gradient-text mb-1">20K+</div>
+                <div class="font-manrope text-white/50 text-xs">Canales en vivo</div>
+            </div>
+            <div class="glass-card rounded-card p-5 text-center">
+                <div class="font-sora font-800 text-3xl gradient-text mb-1">60K+</div>
+                <div class="font-manrope text-white/50 text-xs">Películas VOD</div>
+            </div>
+            <div class="glass-card rounded-card p-5 text-center">
+                <div class="font-sora font-800 text-3xl gradient-text mb-1">150+</div>
+                <div class="font-manrope text-white/50 text-xs">Países incluidos</div>
+            </div>
+            <div class="glass-card rounded-card p-5 text-center">
+                <div class="font-sora font-800 text-3xl gradient-text mb-1">4K</div>
+                <div class="font-manrope text-white/50 text-xs">Calidad máxima</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     PRICING MATRIX
+     ============================================================ -->
+<section id="pricing" class="relative py-20 md:py-28 overflow-hidden" style="background: #0a0a1a;">
+    <!-- Background glow -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-2xl h-64 opacity-20 blur-3xl pointer-events-none" style="background: radial-gradient(circle, #4f46e5, transparent);"></div>
+
+    <div class="max-w-7xl mx-auto px-4 relative">
+        <!-- Section Header -->
+        <div class="text-center mb-14">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full mb-5" style="background: rgba(79,70,229,0.1); border: 1px solid rgba(79,70,229,0.3);">
+                <i class="fa-solid fa-tags text-indigo-400 text-xs"></i>
+                <span class="text-xs font-manrope font-600 text-indigo-300 tracking-widest uppercase">Planes & Precios</span>
+            </div>
+            <h2 class="font-sora font-700 text-3xl md:text-4xl text-white mb-4">Elige tu <span class="gradient-text">plan perfecto</span></h2>
+            <p class="font-manrope text-white/50 text-base max-w-lg mx-auto">Sin contratos. Sin sorpresas. Cancela en cualquier momento.</p>
+        </div>
+
+        <!-- Pricing Cards -->
+        <div class="flex flex-col md:flex-row gap-5 items-stretch md:items-center justify-center max-w-4xl mx-auto">
+
+            <!-- Mensual -->
+            <div id="price-monthly" class="glass-card-pricing rounded-card p-7 flex flex-col flex-1 min-w-0 transition-all duration-300 hover:-translate-y-1 hover:border-indigo-500/30">
+                <div class="mb-6">
+                    <div class="flex items-center gap-2 mb-3">
+                        <i class="fa-regular fa-calendar text-indigo-400 text-sm"></i>
+                        <span class="font-manrope font-700 text-white/70 text-sm tracking-wider uppercase">Mensual</span>
+                    </div>
+                    <div class="flex items-end gap-1.5">
+                        <span class="font-sora font-800 text-4xl text-white">$12</span>
+                        <span class="font-manrope text-white/40 text-sm pb-1.5">/mes</span>
+                    </div>
+                    <p class="font-manrope text-white/40 text-xs mt-1.5">Facturado mensualmente</p>
+                </div>
+
+                <ul class="space-y-3 flex-1 mb-7">
+                    <li class="flex items-center gap-3 text-sm font-manrope text-white/70">
+                        <i class="fa-solid fa-check text-indigo-400 text-xs w-4 flex-shrink-0"></i> +20,000 canales en vivo
+                    </li>
+                    <li class="flex items-center gap-3 text-sm font-manrope text-white/70">
+                        <i class="fa-solid fa-check text-indigo-400 text-xs w-4 flex-shrink-0"></i> Calidad hasta Full HD
+                    </li>
+                    <li class="flex items-center gap-3 text-sm font-manrope text-white/70">
+                        <i class="fa-solid fa-check text-indigo-400 text-xs w-4 flex-shrink-0"></i> 1 dispositivo simultáneo
+                    </li>
+                    <li class="flex items-center gap-3 text-sm font-manrope text-white/70">
+                        <i class="fa-solid fa-check text-indigo-400 text-xs w-4 flex-shrink-0"></i> Soporte por email
+                    </li>
+                    <li class="flex items-center gap-3 text-sm font-manrope text-white/30">
+                        <i class="fa-solid fa-xmark text-white/20 text-xs w-4 flex-shrink-0"></i> Guía EPG avanzada
+                    </li>
+                    <li class="flex items-center gap-3 text-sm font-manrope text-white/30">
+                        <i class="fa-solid fa-xmark text-white/20 text-xs w-4 flex-shrink-0"></i> Contenido 4K
+                    </li>
+                </ul>
+
+                <button class="w-full py-3.5 rounded-card font-manrope font-700 text-sm text-white/80 border border-white/15 hover:border-indigo-500/40 hover:text-white transition-all duration-300">
+                    Comenzar Mensual
+                </button>
+            </div>
+
+            <!-- Anual — POPULAR (scaled up) -->
+            <div id="price-annual" class="popular-card flex flex-col flex-1 min-w-0 relative">
+                <!-- Most Popular Badge -->
+                <div class="absolute -top-4 left-1/2 -translate-x-1/2 z-20 whitespace-nowrap">
+                    <div class="save-badge px-4 py-1.5 rounded-full text-xs font-manrope font-700 text-white flex items-center gap-1.5">
+                        <i class="fa-solid fa-fire text-xs"></i>
+                        Más Popular · Ahorra 40%
+                    </div>
+                </div>
+
+                <div class="rounded-card p-7 flex flex-col h-full" style="background: rgba(14, 14, 40, 0.95); border: 1.5px solid #4f46e5; box-shadow: 0 0 40px rgba(79,70,229,0.3), 0 0 80px rgba(79,70,229,0.1), inset 0 0 30px rgba(79,70,229,0.05);">
+                    <div class="mb-6 mt-2">
+                        <div class="flex items-center gap-2 mb-3">
+                            <i class="fa-regular fa-calendar-days text-indigo-400 text-sm"></i>
+                            <span class="font-manrope font-700 text-white text-sm tracking-wider uppercase">Anual</span>
+                        </div>
+                        <div class="flex items-end gap-1.5">
+                            <span class="font-sora font-800 text-5xl text-white">$7</span>
+                            <span class="font-manrope text-white/50 text-base pb-2">/mes</span>
+                        </div>
+                        <div class="flex items-center gap-2 mt-2">
+                            <span class="font-manrope text-white/30 text-xs line-through">$144/año</span>
+                            <span class="font-manrope text-indigo-300 text-xs font-700">$84/año</span>
+                        </div>
+                    </div>
+
+                    <ul class="space-y-3 flex-1 mb-7">
+                        <li class="flex items-center gap-3 text-sm font-manrope text-white/90">
+                            <i class="fa-solid fa-check text-indigo-400 text-xs w-4 flex-shrink-0"></i> +20,000 canales en vivo
+                        </li>
+                        <li class="flex items-center gap-3 text-sm font-manrope text-white/90">
+                            <i class="fa-solid fa-check text-indigo-400 text-xs w-4 flex-shrink-0"></i> Calidad 4K / Ultra HD
+                        </li>
+                        <li class="flex items-center gap-3 text-sm font-manrope text-white/90">
+                            <i class="fa-solid fa-check text-indigo-400 text-xs w-4 flex-shrink-0"></i> 4 dispositivos simultáneos
+                        </li>
+                        <li class="flex items-center gap-3 text-sm font-manrope text-white/90">
+                            <i class="fa-solid fa-check text-indigo-400 text-xs w-4 flex-shrink-0"></i> Soporte 24/7 prioritario
+                        </li>
+                        <li class="flex items-center gap-3 text-sm font-manrope text-white/90">
+                            <i class="fa-solid fa-check text-indigo-400 text-xs w-4 flex-shrink-0"></i> Guía EPG avanzada
+                        </li>
+                        <li class="flex items-center gap-3 text-sm font-manrope text-white/90">
+                            <i class="fa-solid fa-check text-indigo-400 text-xs w-4 flex-shrink-0"></i> Anti-Freeze & VOD premium
+                        </li>
+                    </ul>
+
+                    <button class="btn-primary w-full py-3.5 rounded-card font-manrope font-700 text-sm text-white flex items-center justify-center gap-2">
+                        <i class="fa-solid fa-bolt text-xs"></i> Comenzar Anual
+                    </button>
+                </div>
+            </div>
+
+            <!-- Semestral -->
+            <div id="price-semester" class="glass-card-pricing rounded-card p-7 flex flex-col flex-1 min-w-0 transition-all duration-300 hover:-translate-y-1 hover:border-indigo-500/30">
+                <div class="mb-6">
+                    <div class="flex items-center gap-2 mb-3">
+                        <i class="fa-regular fa-calendar-check text-indigo-400 text-sm"></i>
+                        <span class="font-manrope font-700 text-white/70 text-sm tracking-wider uppercase">Semestral</span>
+                    </div>
+                    <div class="flex items-end gap-1.5">
+                        <span class="font-sora font-800 text-4xl text-white">$9</span>
+                        <span class="font-manrope text-white/40 text-sm pb-1.5">/mes</span>
+                    </div>
+                    <p class="font-manrope text-white/40 text-xs mt-1.5">$54 por 6 meses · Ahorra 25%</p>
+                </div>
+
+                <ul class="space-y-3 flex-1 mb-7">
+                    <li class="flex items-center gap-3 text-sm font-manrope text-white/70">
+                        <i class="fa-solid fa-check text-indigo-400 text-xs w-4 flex-shrink-0"></i> +20,000 canales en vivo
+                    </li>
+                    <li class="flex items-center gap-3 text-sm font-manrope text-white/70">
+                        <i class="fa-solid fa-check text-indigo-400 text-xs w-4 flex-shrink-0"></i> Calidad hasta Full HD & 4K parcial
+                    </li>
+                    <li class="flex items-center gap-3 text-sm font-manrope text-white/70">
+                        <i class="fa-solid fa-check text-indigo-400 text-xs w-4 flex-shrink-0"></i> 2 dispositivos simultáneos
+                    </li>
+                    <li class="flex items-center gap-3 text-sm font-manrope text-white/70">
+                        <i class="fa-solid fa-check text-indigo-400 text-xs w-4 flex-shrink-0"></i> Soporte 24/7
+                    </li>
+                    <li class="flex items-center gap-3 text-sm font-manrope text-white/70">
+                        <i class="fa-solid fa-check text-indigo-400 text-xs w-4 flex-shrink-0"></i> Guía EPG avanzada
+                    </li>
+                    <li class="flex items-center gap-3 text-sm font-manrope text-white/30">
+                        <i class="fa-solid fa-xmark text-white/20 text-xs w-4 flex-shrink-0"></i> Anti-Freeze premium
+                    </li>
+                </ul>
+
+                <button class="w-full py-3.5 rounded-card font-manrope font-700 text-sm text-white/80 border border-white/15 hover:border-indigo-500/40 hover:text-white transition-all duration-300">
+                    Comenzar Semestral
+                </button>
+            </div>
+        </div>
+
+        <!-- Trust badges -->
+        <div class="flex flex-wrap items-center justify-center gap-6 mt-12 text-white/40">
+            <div class="flex items-center gap-2 text-sm font-manrope">
+                <i class="fa-solid fa-lock text-indigo-400/60"></i> Pago 100% seguro
+            </div>
+            <div class="w-px h-4 bg-white/10 hidden sm:block"></div>
+            <div class="flex items-center gap-2 text-sm font-manrope">
+                <i class="fa-solid fa-rotate-left text-indigo-400/60"></i> Garantía 7 días
+            </div>
+            <div class="w-px h-4 bg-white/10 hidden sm:block"></div>
+            <div class="flex items-center gap-2 text-sm font-manrope">
+                <i class="fa-solid fa-circle-check text-indigo-400/60"></i> Sin contratos
+            </div>
+            <div class="w-px h-4 bg-white/10 hidden sm:block"></div>
+            <div class="flex items-center gap-2 text-sm font-manrope">
+                <i class="fa-brands fa-whatsapp text-indigo-400/60"></i> Activación inmediata
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     COMPATIBILITY SECTION
+     ============================================================ -->
+<section id="compatibility" class="relative py-20 md:py-28" style="background: linear-gradient(to bottom, #0a0a1a, #141432);">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="text-center mb-14">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full mb-5" style="background: rgba(79,70,229,0.1); border: 1px solid rgba(79,70,229,0.3);">
+                <i class="fa-solid fa-mobile-screen-button text-indigo-400 text-xs"></i>
+                <span class="text-xs font-manrope font-600 text-indigo-300 tracking-widest uppercase">Compatibilidad</span>
+            </div>
+            <h2 class="font-sora font-700 text-3xl md:text-4xl text-white mb-4">Disponible en <span class="gradient-text">todos tus dispositivos</span></h2>
+            <p class="font-manrope text-white/50 text-base max-w-lg mx-auto">Una cuenta, acceso desde cualquier pantalla. Smart TV, móvil, tablet, PC y más.</p>
+        </div>
+
+        <!-- Devices Grid -->
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4 mb-12">
+            <div class="compat-badge rounded-card p-5 flex flex-col items-center gap-3 text-center hover:border-indigo-500/40 transition-all group">
+                <div class="w-12 h-12 feature-icon-wrap rounded-card flex items-center justify-center">
+                    <i class="fa-solid fa-tv text-indigo-400 text-xl"></i>
+                </div>
+                <span class="font-manrope font-600 text-white/70 text-xs group-hover:text-white transition-colors">Smart TV</span>
+            </div>
+            <div class="compat-badge rounded-card p-5 flex flex-col items-center gap-3 text-center hover:border-indigo-500/40 transition-all group">
+                <div class="w-12 h-12 feature-icon-wrap rounded-card flex items-center justify-center">
+                    <i class="fa-solid fa-mobile-screen text-indigo-400 text-xl"></i>
+                </div>
+                <span class="font-manrope font-600 text-white/70 text-xs group-hover:text-white transition-colors">Android / iOS</span>
+            </div>
+            <div class="compat-badge rounded-card p-5 flex flex-col items-center gap-3 text-center hover:border-indigo-500/40 transition-all group">
+                <div class="w-12 h-12 feature-icon-wrap rounded-card flex items-center justify-center">
+                    <i class="fa-brands fa-apple text-indigo-400 text-xl"></i>
+                </div>
+                <span class="font-manrope font-600 text-white/70 text-xs group-hover:text-white transition-colors">Apple TV</span>
+            </div>
+            <div class="compat-badge rounded-card p-5 flex flex-col items-center gap-3 text-center hover:border-indigo-500/40 transition-all group">
+                <div class="w-12 h-12 feature-icon-wrap rounded-card flex items-center justify-center">
+                    <i class="fa-brands fa-amazon text-indigo-400 text-xl"></i>
+                </div>
+                <span class="font-manrope font-600 text-white/70 text-xs group-hover:text-white transition-colors">Fire Stick</span>
+            </div>
+            <div class="compat-badge rounded-card p-5 flex flex-col items-center gap-3 text-center hover:border-indigo-500/40 transition-all group">
+                <div class="w-12 h-12 feature-icon-wrap rounded-card flex items-center justify-center">
+                    <i class="fa-brands fa-windows text-indigo-400 text-xl"></i>
+                </div>
+                <span class="font-manrope font-600 text-white/70 text-xs group-hover:text-white transition-colors">PC / Windows</span>
+            </div>
+            <div class="compat-badge rounded-card p-5 flex flex-col items-center gap-3 text-center hover:border-indigo-500/40 transition-all group">
+                <div class="w-12 h-12 feature-icon-wrap rounded-card flex items-center justify-center">
+                    <i class="fa-solid fa-tablet-screen-button text-indigo-400 text-xl"></i>
+                </div>
+                <span class="font-manrope font-600 text-white/70 text-xs group-hover:text-white transition-colors">Tablet / iPad</span>
+            </div>
+        </div>
+
+        <!-- Setup Steps -->
+        <div class="glass-card rounded-card p-8 md:p-10">
+            <div class="text-center mb-8">
+                <h3 class="font-sora font-700 text-white text-xl md:text-2xl">Configura en <span class="gradient-text">3 pasos simples</span></h3>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="flex flex-col items-center text-center gap-3">
+                    <div class="w-12 h-12 rounded-full flex items-center justify-center font-sora font-700 text-white text-lg" style="background: linear-gradient(135deg, #4f46e5, #6366f1); box-shadow: 0 0 20px rgba(79,70,229,0.4);">1</div>
+                    <div class="w-px h-0 md:hidden"></div>
+                    <div>
+                        <h4 class="font-sora font-700 text-white text-sm mb-1.5">Elige tu plan</h4>
+                        <p class="font-manrope text-white/50 text-xs leading-relaxed">Selecciona el plan que mejor se adapte a tus necesidades y realiza el pago seguro.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center text-center gap-3">
+                    <div class="w-12 h-12 rounded-full flex items-center justify-center font-sora font-700 text-white text-lg" style="background: linear-gradient(135deg, #4f46e5, #6366f1); box-shadow: 0 0 20px rgba(79,70,229,0.4);">2</div>
+                    <div>
+                        <h4 class="font-sora font-700 text-white text-sm mb-1.5">Recibe tus credenciales</h4>
+                        <p class="font-manrope text-white/50 text-xs leading-relaxed">Recibirás tu usuario y contraseña al instante por correo electrónico y WhatsApp.</p>
+                    </div>
+                </div>
+                <div class="flex flex-col items-center text-center gap-3">
+                    <div class="w-12 h-12 rounded-full flex items-center justify-center font-sora font-700 text-white text-lg" style="background: linear-gradient(135deg, #4f46e5, #6366f1); box-shadow: 0 0 20px rgba(79,70,229,0.4);">3</div>
+                    <div>
+                        <h4 class="font-sora font-700 text-white text-sm mb-1.5">¡Empieza a ver!</h4>
+                        <p class="font-manrope text-white/50 text-xs leading-relaxed">Instala la app en tu dispositivo, ingresa tus datos y disfruta miles de canales al instante.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     TESTIMONIALS / SOCIAL PROOF
+     ============================================================ -->
+<section id="testimonials" class="relative py-20" style="background: #141432;">
+    <div class="absolute inset-0 dot-grid opacity-30 pointer-events-none"></div>
+    <div class="max-w-7xl mx-auto px-4 relative">
+        <div class="text-center mb-12">
+            <h2 class="font-sora font-700 text-3xl text-white mb-3">Lo que dicen nuestros <span class="gradient-text">suscriptores</span></h2>
+            <div class="flex items-center justify-center gap-1 mt-3">
+                <i class="fa-solid fa-star text-indigo-400 text-sm"></i>
+                <i class="fa-solid fa-star text-indigo-400 text-sm"></i>
+                <i class="fa-solid fa-star text-indigo-400 text-sm"></i>
+                <i class="fa-solid fa-star text-indigo-400 text-sm"></i>
+                <i class="fa-solid fa-star text-indigo-400 text-sm"></i>
+                <span class="font-manrope text-white/50 text-sm ml-2">4.9 de 5 · +2,400 reseñas</span>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-5">
+            <div id="review-1" class="glass-card rounded-card p-6">
+                <div class="flex items-center gap-1 mb-4">
+                    <i class="fa-solid fa-star text-indigo-400 text-xs"></i>
+                    <i class="fa-solid fa-star text-indigo-400 text-xs"></i>
+                    <i class="fa-solid fa-star text-indigo-400 text-xs"></i>
+                    <i class="fa-solid fa-star text-indigo-400 text-xs"></i>
+                    <i class="fa-solid fa-star text-indigo-400 text-xs"></i>
+                </div>
+                <p class="font-manrope text-white/65 text-sm leading-relaxed mb-5">"Increíble servicio. Llevo 6 meses y jamás he tenido problemas de buffering. La calidad 4K es real y el soporte es rapidísimo. 100% recomendado."</p>
+                <div class="flex items-center gap-3">
+                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-5.jpg" class="w-9 h-9 rounded-full object-cover" alt="Avatar" />
+                    <div>
+                        <div class="font-manrope font-700 text-white text-sm">Valentina R.</div>
+                        <div class="font-manrope text-white/40 text-xs">Bogotá, Colombia</div>
+                    </div>
+                </div>
+            </div>
+            <div id="review-2" class="glass-card rounded-card p-6">
+                <div class="flex items-center gap-1 mb-4">
+                    <i class="fa-solid fa-star text-indigo-400 text-xs"></i>
+                    <i class="fa-solid fa-star text-indigo-400 text-xs"></i>
+                    <i class="fa-solid fa-star text-indigo-400 text-xs"></i>
+                    <i class="fa-solid fa-star text-indigo-400 text-xs"></i>
+                    <i class="fa-solid fa-star text-indigo-400 text-xs"></i>
+                </div>
+                <p class="font-manrope text-white/65 text-sm leading-relaxed mb-5">"Tengo el plan anual y fue la mejor decisión. Veo la Premier League y la NBA en 4K sin ningún corte. El precio es imbatible comparado a lo que ofrecen."</p>
+                <div class="flex items-center gap-3">
+                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-3.jpg" class="w-9 h-9 rounded-full object-cover" alt="Avatar" />
+                    <div>
+                        <div class="font-manrope font-700 text-white text-sm">Andrés M.</div>
+                        <div class="font-manrope text-white/40 text-xs">Medellín, Colombia</div>
+                    </div>
+                </div>
+            </div>
+            <div id="review-3" class="glass-card rounded-card p-6">
+                <div class="flex items-center gap-1 mb-4">
+                    <i class="fa-solid fa-star text-indigo-400 text-xs"></i>
+                    <i class="fa-solid fa-star text-indigo-400 text-xs"></i>
+                    <i class="fa-solid fa-star text-indigo-400 text-xs"></i>
+                    <i class="fa-solid fa-star text-indigo-400 text-xs"></i>
+                    <i class="fa-solid fa-star-half-stroke text-indigo-400 text-xs"></i>
+                </div>
+                <p class="font-manrope text-white/65 text-sm leading-relaxed mb-5">"La instalación fue en minutos y el catálogo es enorme. Tenemos 4 televisores en casa y todos funcionan al mismo tiempo sin ningún problema. Excelente."</p>
+                <div class="flex items-center gap-3">
+                    <img src="https://storage.googleapis.com/uxpilot-auth.appspot.com/avatars/avatar-6.jpg" class="w-9 h-9 rounded-full object-cover" alt="Avatar" />
+                    <div>
+                        <div class="font-manrope font-700 text-white text-sm">Carolina T.</div>
+                        <div class="font-manrope text-white/40 text-xs">Cali, Colombia</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     CTA BANNER
+     ============================================================ -->
+<section id="cta-banner" class="relative py-20 md:py-24 overflow-hidden" style="background: #0a0a1a;">
+    <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(ellipse at 50% 50%, rgba(79,70,229,0.18) 0%, transparent 70%);"></div>
+    <div class="max-w-4xl mx-auto px-4 relative text-center">
+        <div class="glass-card rounded-card p-10 md:p-16" style="border: 1px solid rgba(79,70,229,0.25);">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full mb-6" style="background: rgba(79,70,229,0.15); border: 1px solid rgba(79,70,229,0.3);">
+                <div class="pulse-dot w-2 h-2 rounded-full bg-blue-400"></div>
+                <span class="text-xs font-manrope font-600 text-blue-300 tracking-wider">Servidores activos · Activación inmediata</span>
+            </div>
+            <h2 class="font-sora font-800 text-3xl md:text-5xl text-white mb-5 leading-tight">
+                Únete a más de<br>
+                <span class="gradient-text neon-text">50,000 suscriptores</span>
+            </h2>
+            <p class="font-manrope text-white/50 text-base md:text-lg mb-9 max-w-xl mx-auto leading-relaxed">
+                Comienza hoy con 7 días de garantía. Si no estás satisfecho, te devolvemos tu dinero sin preguntas.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-3 justify-center">
+                <a href="#pricing" class="btn-primary inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-card text-base font-manrope font-700 text-white">
+                    <i class="fa-solid fa-bolt"></i> Activar Suscripción
+                </a>
+                <a href="https://wa.me/573001234567" class="btn-ghost inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-card text-base font-manrope font-600 text-white/80">
+                    <i class="fa-brands fa-whatsapp"></i> Contactar por WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer id="footer" style="background: #06060f; border-top: 1px solid rgba(79,70,229,0.12);" class="py-16">
+    <div class="max-w-7xl mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
+            <!-- Brand -->
+            <div class="md:col-span-1">
+                <div class="flex items-center gap-2.5 mb-4">
+                    <div class="w-8 h-8 rounded-card bg-indigo-500 flex items-center justify-center neon-glow flex-shrink-0">
+                        <i class="fa-solid fa-play text-white text-xs"></i>
+                    </div>
+                    <span class="font-sora font-700 text-white text-lg">Stream<span class="gradient-text">Colombia</span></span>
+                </div>
+                <p class="font-manrope text-white/40 text-sm leading-relaxed mb-5">El servicio IPTV premium con la mayor biblioteca de contenido en español y más de 20,000 canales en vivo.</p>
+                <div class="flex items-center gap-3">
+                    <a href="https://wa.me/573001234567" class="w-9 h-9 compat-badge rounded-card flex items-center justify-center hover:border-indigo-500/50 transition-colors" aria-label="WhatsApp">
+                        <i class="fa-brands fa-whatsapp text-white/60 text-sm hover:text-indigo-400"></i>
+                    </a>
+                    <a href="#footer" class="w-9 h-9 compat-badge rounded-card flex items-center justify-center hover:border-indigo-500/50 transition-colors" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram text-white/60 text-sm hover:text-indigo-400"></i>
+                    </a>
+                    <a href="#footer" class="w-9 h-9 compat-badge rounded-card flex items-center justify-center hover:border-indigo-500/50 transition-colors" aria-label="Telegram">
+                        <i class="fa-brands fa-telegram text-white/60 text-sm hover:text-indigo-400"></i>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Links -->
+            <div>
+                <h5 class="font-sora font-700 text-white text-sm mb-4">Servicio</h5>
+                <ul class="space-y-2.5">
+                    <li><a href="#features" class="font-manrope text-white/40 text-sm hover:text-indigo-300 transition-colors">Características</a></li>
+                    <li><a href="#pricing" class="font-manrope text-white/40 text-sm hover:text-indigo-300 transition-colors">Precios</a></li>
+                    <li><a href="#content" class="font-manrope text-white/40 text-sm hover:text-indigo-300 transition-colors">Lista de canales</a></li>
+                    <li><a href="#compatibility" class="font-manrope text-white/40 text-sm hover:text-indigo-300 transition-colors">Estado del servidor</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="font-sora font-700 text-white text-sm mb-4">Soporte</h5>
+                <ul class="space-y-2.5">
+                    <li><a href="#compatibility" class="font-manrope text-white/40 text-sm hover:text-indigo-300 transition-colors">Centro de ayuda</a></li>
+                    <li><a href="#compatibility" class="font-manrope text-white/40 text-sm hover:text-indigo-300 transition-colors">Configuración</a></li>
+                    <li><a href="https://wa.me/573001234567" class="font-manrope text-white/40 text-sm hover:text-indigo-300 transition-colors">WhatsApp</a></li>
+                    <li><a href="#footer" class="font-manrope text-white/40 text-sm hover:text-indigo-300 transition-colors">Telegram</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h5 class="font-sora font-700 text-white text-sm mb-4">Legal</h5>
+                <ul class="space-y-2.5">
+                    <li><a href="#footer" class="font-manrope text-white/40 text-sm hover:text-indigo-300 transition-colors">Términos de uso</a></li>
+                    <li><a href="#footer" class="font-manrope text-white/40 text-sm hover:text-indigo-300 transition-colors">Política de privacidad</a></li>
+                    <li><a href="#footer" class="font-manrope text-white/40 text-sm hover:text-indigo-300 transition-colors">Política de reembolso</a></li>
+                    <li><a href="#footer" class="font-manrope text-white/40 text-sm hover:text-indigo-300 transition-colors">Cookies</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Divider -->
+        <div class="border-t border-white/5 pt-8 flex flex-col sm:flex-row items-center justify-between gap-4">
+            <p class="font-manrope text-white/25 text-xs text-center sm:text-left">© 2026 StreamColombia. Todos los derechos reservados.</p>
+            <div class="flex items-center gap-2">
+                <div class="pulse-dot w-1.5 h-1.5 rounded-full bg-blue-400"></div>
+                <span class="font-manrope text-blue-400/60 text-xs">Servidores Online · 99.9% Uptime</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    // Scroll-based glass header
+    window.addEventListener('scroll', function () {
+        const header = document.getElementById('header');
+        if (window.scrollY > 40) {
+            header.classList.add('scrolled');
+        } else {
+            header.classList.remove('scrolled');
+        }
+    });
+
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+            }
+        });
+    });
+
+    const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuToggle?.addEventListener('click', function () {
+        const isOpen = !mobileMenu.classList.contains('hidden');
+        mobileMenu.classList.toggle('hidden', isOpen);
+        mobileMenuToggle.setAttribute('aria-expanded', String(!isOpen));
+    });
+
+    document.querySelectorAll('.mobile-nav-link').forEach(link => {
+        link.addEventListener('click', function () {
+            mobileMenu.classList.add('hidden');
+            mobileMenuToggle.setAttribute('aria-expanded', 'false');
+        });
+    });
+
+    const languageSelects = [
+        document.getElementById('language-select'),
+        document.getElementById('language-select-mobile')
+    ].filter(Boolean);
+
+    function getTranslateLanguage() {
+        const match = document.cookie.match(/(?:^|;\s*)googtrans=([^;]+)/);
+        const value = match ? decodeURIComponent(match[1]) : '';
+        return value.split('/').filter(Boolean).pop() || 'es';
+    }
+
+    function setTranslateCookie(language) {
+        const expires = 'expires=Fri, 31 Dec 9999 23:59:59 GMT';
+        if (language === 'es') {
+            document.cookie = 'googtrans=; path=/; expires=Thu, 01 Jan 1970 00:00:00 GMT';
+            document.cookie = 'googtrans=; path=/; domain=' + location.hostname + '; expires=Thu, 01 Jan 1970 00:00:00 GMT';
+            return;
+        }
+
+        document.cookie = `googtrans=/es/${language}; path=/; ${expires}`;
+        document.cookie = `googtrans=/es/${language}; path=/; domain=${location.hostname}; ${expires}`;
+    }
+
+    function syncLanguageSelects(language) {
+        languageSelects.forEach(select => {
+            select.value = language;
+        });
+    }
+
+    syncLanguageSelects(getTranslateLanguage());
+
+    languageSelects.forEach(select => {
+        select.addEventListener('change', function () {
+            setTranslateCookie(this.value);
+            syncLanguageSelects(this.value);
+            window.location.reload();
+        });
+    });
+
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'es',
+            includedLanguages: 'es,en,pt,fr,de,it',
+            autoDisplay: false
+        }, 'google_translate_element');
+    }
+</script>
+<script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</body>
+</html>
