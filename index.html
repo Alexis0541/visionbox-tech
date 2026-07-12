@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StreamColombia | IPTV Premium</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='8' y1='8' x2='56' y2='56'%3E%3Cstop stop-color='%2306b6d4'/%3E%3Cstop offset='1' stop-color='%2322c55e'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='14' fill='%23030712'/%3E%3Cpath d='M14 43h36v5H14zM20 25a12 12 0 0 1 24 0h-5a7 7 0 0 0-14 0h-5zm-8 0a20 20 0 0 1 40 0h-5a15 15 0 0 0-30 0h-5z' fill='url(%23g)'/%3E%3Ccircle cx='32' cy='34' r='7' fill='url(%23g)'/%3E%3C/svg%3E">
     <script src="https://cdn.tailwindcss.com"></script>
     <script> window.FontAwesomeConfig = { autoReplaceSvg: 'nest'};</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -20,23 +21,23 @@
                         manrope: ['Manrope', 'sans-serif'],
                     },
                     colors: {
-                        midnight: '#0a0a1a',
-                        deep: '#141432',
-                        navy: '#1e1e5a',
+                        midnight: '#030712',
+                        deep: '#0f172a',
+                        navy: '#083344',
                         indigo: {
-                            500: '#4f46e5',
-                            400: '#6366f1',
-                            300: '#818cf8',
-                            600: '#3730a3',
+                            500: '#06b6d4',
+                            400: '#22d3ee',
+                            300: '#67e8f9',
+                            600: '#0e7490',
                         },
-                        neon: '#4f46e5',
+                        neon: '#06b6d4',
                     },
                     borderRadius: {
                         'card': '8px',
                     },
                     backgroundImage: {
-                        'radial-dark': 'radial-gradient(ellipse at 50% 0%, #1e1e5a 0%, #0a0a1a 70%)',
-                        'radial-hero': 'radial-gradient(ellipse at 60% 40%, #1e1e5a 0%, #141432 40%, #0a0a1a 80%)',
+                        'radial-dark': 'radial-gradient(ellipse at 50% 0%, #083344 0%, #030712 70%)',
+                        'radial-hero': 'radial-gradient(ellipse at 60% 40%, #083344 0%, #0f172a 40%, #030712 80%)',
                     }
                 }
             }
@@ -48,13 +49,18 @@
 
         body {
             font-family: 'Manrope', sans-serif;
-            background-color: #0a0a1a;
+            background-color: #030712;
             color: #fff;
             overflow-x: hidden;
         }
 
         h1, h2, h3, h4, h5 {
             font-family: 'Sora', sans-serif;
+        }
+
+        .brand-mark {
+            background: linear-gradient(135deg, #06b6d4 0%, #22c55e 100%);
+            box-shadow: 0 0 22px rgba(6, 182, 212, 0.48), 0 0 44px rgba(34, 197, 94, 0.18);
         }
 
         /* Glass Header */
@@ -70,37 +76,37 @@
             background: rgba(10, 10, 26, 0.85);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
-            border-bottom: 1px solid rgba(79, 70, 229, 0.2);
+            border-bottom: 1px solid rgba(6, 182, 212, 0.2);
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
         }
 
         /* Neon glow effects */
         .neon-glow {
-            box-shadow: 0 0 20px rgba(79, 70, 229, 0.5), 0 0 40px rgba(79, 70, 229, 0.2);
+            box-shadow: 0 0 20px rgba(6, 182, 212, 0.5), 0 0 40px rgba(6, 182, 212, 0.2);
         }
 
         .neon-text {
-            text-shadow: 0 0 20px rgba(99, 102, 241, 0.8);
+            text-shadow: 0 0 20px rgba(34, 211, 238, 0.8);
         }
 
         .neon-border {
-            border: 1.5px solid #4f46e5;
-            box-shadow: 0 0 20px rgba(79, 70, 229, 0.4), inset 0 0 20px rgba(79, 70, 229, 0.05);
+            border: 1.5px solid #06b6d4;
+            box-shadow: 0 0 20px rgba(6, 182, 212, 0.4), inset 0 0 20px rgba(6, 182, 212, 0.05);
         }
 
         /* Glassmorphic cards */
         .glass-card {
-            background: rgba(20, 20, 50, 0.6);
+            background: rgba(15, 23, 42, 0.6);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
-            border: 1px solid rgba(79, 70, 229, 0.2);
+            border: 1px solid rgba(6, 182, 212, 0.2);
         }
 
         .glass-card-pricing {
-            background: rgba(14, 14, 35, 0.8);
+            background: rgba(3, 7, 18, 0.8);
             backdrop-filter: blur(24px);
             -webkit-backdrop-filter: blur(24px);
-            border: 1px solid rgba(79, 70, 229, 0.15);
+            border: 1px solid rgba(6, 182, 212, 0.15);
         }
 
         /* Marquee */
@@ -138,7 +144,7 @@
 
         /* Gradient text */
         .gradient-text {
-            background: linear-gradient(135deg, #818cf8 0%, #4f46e5 50%, #6366f1 100%);
+            background: linear-gradient(135deg, #67e8f9 0%, #06b6d4 50%, #22d3ee 100%);
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
             background-clip: text;
@@ -146,31 +152,31 @@
 
         /* Feature icon container */
         .feature-icon-wrap {
-            background: linear-gradient(135deg, rgba(79, 70, 229, 0.15) 0%, rgba(30, 30, 90, 0.3) 100%);
-            border: 1.5px solid rgba(79, 70, 229, 0.25);
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.15) 0%, rgba(8, 51, 68, 0.3) 100%);
+            border: 1.5px solid rgba(6, 182, 212, 0.25);
         }
 
         /* Hero gradient */
         .hero-bg {
-            background: radial-gradient(ellipse at 60% 30%, #1e1e5a 0%, #141432 40%, #0a0a1a 80%);
+            background: radial-gradient(ellipse at 60% 30%, #083344 0%, #0f172a 40%, #030712 80%);
         }
 
         /* Compatibility badge */
         .compat-badge {
-            background: rgba(20, 20, 50, 0.7);
-            border: 1px solid rgba(79, 70, 229, 0.2);
+            background: rgba(15, 23, 42, 0.7);
+            border: 1px solid rgba(6, 182, 212, 0.2);
             backdrop-filter: blur(10px);
         }
 
         /* Content mosaic overlay */
         .mosaic-overlay {
-            background: linear-gradient(to top, #0a0a1a 0%, transparent 40%);
+            background: linear-gradient(to top, #030712 0%, transparent 40%);
         }
 
         /* Save badge */
         .save-badge {
-            background: linear-gradient(135deg, #4f46e5, #6366f1);
-            box-shadow: 0 0 16px rgba(79, 70, 229, 0.6);
+            background: linear-gradient(135deg, #06b6d4, #22d3ee);
+            box-shadow: 0 0 16px rgba(6, 182, 212, 0.6);
         }
 
         /* Floating animation */
@@ -189,17 +195,17 @@
 
         /* Particle dots background */
         .dot-grid {
-            background-image: radial-gradient(rgba(79, 70, 229, 0.15) 1px, transparent 1px);
+            background-image: radial-gradient(rgba(6, 182, 212, 0.15) 1px, transparent 1px);
             background-size: 40px 40px;
         }
 
         /* Smooth hover */
         .btn-primary {
-            background: linear-gradient(135deg, #4f46e5 0%, #6366f1 100%);
+            background: linear-gradient(135deg, #06b6d4 0%, #22d3ee 100%);
             transition: all 0.3s ease;
         }
         .btn-primary:hover {
-            box-shadow: 0 0 30px rgba(79, 70, 229, 0.6);
+            box-shadow: 0 0 30px rgba(6, 182, 212, 0.6);
             transform: translateY(-2px);
         }
 
@@ -208,8 +214,8 @@
             transition: all 0.3s ease;
         }
         .btn-ghost:hover {
-            border-color: rgba(79, 70, 229, 0.6);
-            background: rgba(79, 70, 229, 0.1);
+            border-color: rgba(6, 182, 212, 0.6);
+            background: rgba(6, 182, 212, 0.1);
         }
 
         /* Nav link hover */
@@ -225,7 +231,7 @@
             left: 0;
             width: 0;
             height: 1.5px;
-            background: #4f46e5;
+            background: #06b6d4;
             transition: width 0.3s ease;
         }
         .nav-link:hover { color: #fff; }
@@ -239,8 +245,8 @@
             gap: 8px;
             padding: 0 10px;
             border-radius: 8px;
-            background: rgba(79,70,229,0.1);
-            border: 1px solid rgba(79,70,229,0.25);
+            background: rgba(6,182,212,0.1);
+            border: 1px solid rgba(6,182,212,0.25);
         }
 
         .language-switcher .fa-language {
@@ -295,8 +301,8 @@
     <div class="max-w-7xl mx-auto flex items-center justify-between h-16 md:h-18">
         <!-- Logo -->
         <div class="flex items-center gap-2.5">
-            <div class="w-8 h-8 rounded-card bg-indigo-500 flex items-center justify-center neon-glow flex-shrink-0">
-                <i class="fa-solid fa-play text-white text-xs"></i>
+            <div class="brand-mark w-8 h-8 rounded-card flex items-center justify-center flex-shrink-0">
+                <i class="fa-solid fa-satellite-dish text-white text-xs"></i>
             </div>
             <span class="font-sora font-700 text-white text-lg tracking-tight">Stream<span class="gradient-text">Colombia</span></span>
         </div>
@@ -323,7 +329,7 @@
                 </select>
             </div>
             <!-- Server Status -->
-            <div class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full" style="background: rgba(79,70,229,0.1); border: 1px solid rgba(79,70,229,0.25);">
+            <div class="hidden sm:flex items-center gap-2 px-3 py-1.5 rounded-full" style="background: rgba(6,182,212,0.1); border: 1px solid rgba(6,182,212,0.25);">
                 <div class="pulse-dot w-2 h-2 rounded-full bg-blue-400"></div>
                 <span class="text-xs font-manrope text-blue-300 font-500 whitespace-nowrap">Servers Online</span>
             </div>
@@ -367,7 +373,7 @@
         <!-- Left: Text Content -->
         <div class="flex-1 text-center lg:text-left z-10 lg:pr-8">
             <!-- Badge -->
-            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full mb-6" style="background: rgba(79,70,229,0.15); border: 1px solid rgba(79,70,229,0.35);">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full mb-6" style="background: rgba(6,182,212,0.15); border: 1px solid rgba(6,182,212,0.35);">
                 <i class="fa-solid fa-star text-indigo-300 text-xs"></i>
                 <span class="text-xs font-manrope font-600 text-indigo-300 tracking-wider uppercase">Premium IPTV · +20,000 Canales</span>
             </div>
@@ -413,37 +419,37 @@
         <!-- Right: Device Mockups -->
         <div class="flex-1 relative flex items-center justify-center min-h-[320px] md:min-h-[420px] lg:min-h-[500px]">
             <!-- TV Mockup -->
-            <div class="float-tv relative z-10" style="filter: drop-shadow(0 40px 60px rgba(79,70,229,0.4));">
-                <div class="w-72 md:w-96 lg:w-[420px] rounded-card overflow-hidden" style="border: 3px solid rgba(79,70,229,0.4); box-shadow: 0 0 60px rgba(79,70,229,0.25), inset 0 0 20px rgba(0,0,0,0.5);">
+            <div class="float-tv relative z-10" style="filter: drop-shadow(0 40px 60px rgba(6,182,212,0.4));">
+                <div class="w-72 md:w-96 lg:w-[420px] rounded-card overflow-hidden" style="border: 3px solid rgba(6,182,212,0.4); box-shadow: 0 0 60px rgba(6,182,212,0.25), inset 0 0 20px rgba(0,0,0,0.5);">
                     <img class="w-full h-48 md:h-60 lg:h-64 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_11d2f7fbea_6387a65c3a571715.png" alt="dark cinematic TV screen showing stunning Netflix-style movie hero banner with dramatic lighting, de" />
                     <!-- TV stand -->
                 </div>
-                <div class="mx-auto w-16 h-2 mt-1 rounded-sm" style="background: rgba(79,70,229,0.3);"></div>
-                <div class="mx-auto w-24 h-1.5 rounded-sm" style="background: rgba(79,70,229,0.2);"></div>
+                <div class="mx-auto w-16 h-2 mt-1 rounded-sm" style="background: rgba(6,182,212,0.3);"></div>
+                <div class="mx-auto w-24 h-1.5 rounded-sm" style="background: rgba(6,182,212,0.2);"></div>
             </div>
 
             <!-- Mobile Mockup (overlapping) -->
-            <div class="float-mobile absolute -bottom-4 -right-2 md:right-4 z-20" style="filter: drop-shadow(0 20px 40px rgba(79,70,229,0.5));">
-                <div class="w-20 md:w-28 rounded-xl overflow-hidden" style="border: 2px solid rgba(79,70,229,0.5); box-shadow: 0 0 30px rgba(79,70,229,0.3);">
+            <div class="float-mobile absolute -bottom-4 -right-2 md:right-4 z-20" style="filter: drop-shadow(0 20px 40px rgba(6,182,212,0.5));">
+                <div class="w-20 md:w-28 rounded-xl overflow-hidden" style="border: 2px solid rgba(6,182,212,0.5); box-shadow: 0 0 30px rgba(6,182,212,0.3);">
                     <img class="w-full h-36 md:h-48 object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_8c7ed2c8d6_44c64e5139bb4246.png" alt="smartphone screen showing IPTV streaming app with dark UI, sports channel list, dark background, viv" />
                 </div>
             </div>
 
             <!-- Glow orb behind devices -->
             <div class="absolute inset-0 flex items-center justify-center pointer-events-none">
-                <div class="w-64 h-64 rounded-full opacity-25 blur-3xl" style="background: radial-gradient(circle, #4f46e5, transparent);"></div>
+                <div class="w-64 h-64 rounded-full opacity-25 blur-3xl" style="background: radial-gradient(circle, #06b6d4, transparent);"></div>
             </div>
         </div>
     </div>
 
     <!-- Bottom fade -->
-    <div class="absolute bottom-0 left-0 right-0 h-24 pointer-events-none" style="background: linear-gradient(to bottom, transparent, #0a0a1a);"></div>
+    <div class="absolute bottom-0 left-0 right-0 h-24 pointer-events-none" style="background: linear-gradient(to bottom, transparent, #030712);"></div>
 </section>
 
 <!-- ============================================================
      MARQUEE — SPORTS & STUDIOS
      ============================================================ -->
-<section id="marquee" class="relative py-8 overflow-hidden" style="background: #0a0a1a; border-top: 1px solid rgba(79,70,229,0.1); border-bottom: 1px solid rgba(79,70,229,0.1);">
+<section id="marquee" class="relative py-8 overflow-hidden" style="background: #030712; border-top: 1px solid rgba(6,182,212,0.1); border-bottom: 1px solid rgba(6,182,212,0.1);">
     <div class="marquee-wrapper">
         <div class="marquee-track">
             <!-- Set 1 -->
@@ -569,11 +575,11 @@
 <!-- ============================================================
      FEATURES — THE PULSE
      ============================================================ -->
-<section id="features" class="relative py-20 md:py-28" style="background: #0a0a1a;">
+<section id="features" class="relative py-20 md:py-28" style="background: #030712;">
     <div class="max-w-7xl mx-auto px-4">
         <!-- Section Header -->
         <div class="text-center mb-16">
-            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full mb-5" style="background: rgba(79,70,229,0.1); border: 1px solid rgba(79,70,229,0.3);">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full mb-5" style="background: rgba(6,182,212,0.1); border: 1px solid rgba(6,182,212,0.3);">
                 <i class="fa-solid fa-waveform-lines text-indigo-400 text-xs"></i>
                 <span class="text-xs font-manrope font-600 text-indigo-300 tracking-widest uppercase">The Pulse</span>
             </div>
@@ -662,11 +668,11 @@
 <!-- ============================================================
      CONTENT MOSAIC
      ============================================================ -->
-<section id="content" class="relative py-20 md:py-28" style="background: linear-gradient(to bottom, #0a0a1a, #141432, #0a0a1a);">
+<section id="content" class="relative py-20 md:py-28" style="background: linear-gradient(to bottom, #030712, #0f172a, #030712);">
     <div class="max-w-7xl mx-auto px-4">
         <!-- Section Header -->
         <div class="text-center mb-14">
-            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full mb-5" style="background: rgba(79,70,229,0.1); border: 1px solid rgba(79,70,229,0.3);">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full mb-5" style="background: rgba(6,182,212,0.1); border: 1px solid rgba(6,182,212,0.3);">
                 <i class="fa-solid fa-layer-group text-indigo-400 text-xs"></i>
                 <span class="text-xs font-manrope font-600 text-indigo-300 tracking-widest uppercase">Biblioteca de Contenido</span>
             </div>
@@ -688,26 +694,26 @@
         <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3">
 
             <!-- Large feature (spans 2 rows on lg) -->
-            <div class="lg:col-span-2 lg:row-span-2 relative overflow-hidden rounded-card group cursor-pointer h-48 md:h-56 lg:h-auto lg:min-h-[340px]" style="border: 1px solid rgba(79,70,229,0.15);">
+            <div class="lg:col-span-2 lg:row-span-2 relative overflow-hidden rounded-card group cursor-pointer h-48 md:h-56 lg:h-auto lg:min-h-[340px]" style="border: 1px solid rgba(6,182,212,0.15);">
                 <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_7c9c48fd56_ff659e42df17eaf5.png" alt="cinematic movie poster action thriller dark dramatic lighting heroes silhouette neon colors, vertica" />
                 <div class="absolute inset-0 mosaic-overlay opacity-80 group-hover:opacity-60 transition-opacity"></div>
-                <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(79,70,229,0.2) 0%, transparent 60%);"></div>
+                <div class="absolute inset-0" style="background: linear-gradient(135deg, rgba(6,182,212,0.2) 0%, transparent 60%);"></div>
                 <div class="absolute bottom-4 left-4 right-4">
                     <div class="flex items-center gap-2 mb-2">
-                        <span class="px-2 py-0.5 rounded text-xs font-manrope font-700 text-white" style="background: #4f46e5;">4K</span>
+                        <span class="px-2 py-0.5 rounded text-xs font-manrope font-700 text-white" style="background: #06b6d4;">4K</span>
                         <span class="text-white/60 text-xs font-manrope">Acción · 2024</span>
                     </div>
                     <p class="font-sora font-700 text-white text-base leading-tight">Estrenos Premium</p>
                 </div>
                 <div class="absolute top-3 right-3 opacity-0 group-hover:opacity-100 transition-opacity">
-                    <div class="w-8 h-8 rounded-full flex items-center justify-center" style="background: rgba(79,70,229,0.8);">
+                    <div class="w-8 h-8 rounded-full flex items-center justify-center" style="background: rgba(6,182,212,0.8);">
                         <i class="fa-solid fa-play text-white text-xs ml-0.5"></i>
                     </div>
                 </div>
             </div>
 
             <!-- Grid items -->
-            <div class="relative overflow-hidden rounded-card group cursor-pointer h-40 md:h-48" style="border: 1px solid rgba(79,70,229,0.15);">
+            <div class="relative overflow-hidden rounded-card group cursor-pointer h-40 md:h-48" style="border: 1px solid rgba(6,182,212,0.15);">
                 <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_26557b2651_1698ec481fcab2f3.png" alt="live soccer football match stadium aerial view dramatic lighting green pitch crowd night game, cinem" />
                 <div class="absolute inset-0 mosaic-overlay opacity-70 group-hover:opacity-40 transition-opacity"></div>
                 <div class="absolute bottom-3 left-3">
@@ -716,7 +722,7 @@
                 </div>
             </div>
 
-            <div class="relative overflow-hidden rounded-card group cursor-pointer h-40 md:h-48" style="border: 1px solid rgba(79,70,229,0.15);">
+            <div class="relative overflow-hidden rounded-card group cursor-pointer h-40 md:h-48" style="border: 1px solid rgba(6,182,212,0.15);">
                 <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_9ee1e12dd9_fa960ad63ddcf5f4.png" alt="NBA basketball game dramatic close up player dunking, professional sports photography, vibrant court" />
                 <div class="absolute inset-0 mosaic-overlay opacity-70 group-hover:opacity-40 transition-opacity"></div>
                 <div class="absolute bottom-3 left-3">
@@ -725,7 +731,7 @@
                 </div>
             </div>
 
-            <div class="relative overflow-hidden rounded-card group cursor-pointer h-40 md:h-48" style="border: 1px solid rgba(79,70,229,0.15);">
+            <div class="relative overflow-hidden rounded-card group cursor-pointer h-40 md:h-48" style="border: 1px solid rgba(6,182,212,0.15);">
                 <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_5202b6a750_2f01cf03d96feaa8.png" alt="dark sci-fi thriller TV series poster moody cinematic atmosphere deep space neon, vertical format" />
                 <div class="absolute inset-0 mosaic-overlay opacity-70 group-hover:opacity-40 transition-opacity"></div>
                 <div class="absolute bottom-3 left-3">
@@ -734,7 +740,7 @@
                 </div>
             </div>
 
-            <div class="relative overflow-hidden rounded-card group cursor-pointer h-40 md:h-48" style="border: 1px solid rgba(79,70,229,0.15);">
+            <div class="relative overflow-hidden rounded-card group cursor-pointer h-40 md:h-48" style="border: 1px solid rgba(6,182,212,0.15);">
                 <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_dacd054053_36eec5353689e688.png" alt="boxing match dramatic arena lighting crowd championship fight night professional sports" />
                 <div class="absolute inset-0 mosaic-overlay opacity-70 group-hover:opacity-40 transition-opacity"></div>
                 <div class="absolute bottom-3 left-3">
@@ -743,7 +749,7 @@
                 </div>
             </div>
 
-            <div class="relative overflow-hidden rounded-card group cursor-pointer h-40 md:h-48" style="border: 1px solid rgba(79,70,229,0.15);">
+            <div class="relative overflow-hidden rounded-card group cursor-pointer h-40 md:h-48" style="border: 1px solid rgba(6,182,212,0.15);">
                 <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_5c4ee1bebc_83d141f8f74a50b4.png" alt="children animation movie colorful vibrant cartoon characters bright colorful background family fun" />
                 <div class="absolute inset-0 mosaic-overlay opacity-50 group-hover:opacity-30 transition-opacity"></div>
                 <div class="absolute bottom-3 left-3">
@@ -752,7 +758,7 @@
                 </div>
             </div>
 
-            <div class="relative overflow-hidden rounded-card group cursor-pointer h-40 md:h-48" style="border: 1px solid rgba(79,70,229,0.15);">
+            <div class="relative overflow-hidden rounded-card group cursor-pointer h-40 md:h-48" style="border: 1px solid rgba(6,182,212,0.15);">
                 <img class="w-full h-full object-cover" src="https://storage.googleapis.com/uxpilot-auth.appspot.com/gen_ee3fa81765_feb50a606e241102.png" alt="romantic drama movie poster couple silhouette golden hour cinematic photography elegant, dark backgr" />
                 <div class="absolute inset-0 mosaic-overlay opacity-70 group-hover:opacity-40 transition-opacity"></div>
                 <div class="absolute bottom-3 left-3">
@@ -787,14 +793,14 @@
 <!-- ============================================================
      PRICING MATRIX
      ============================================================ -->
-<section id="pricing" class="relative py-20 md:py-28 overflow-hidden" style="background: #0a0a1a;">
+<section id="pricing" class="relative py-20 md:py-28 overflow-hidden" style="background: #030712;">
     <!-- Background glow -->
-    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-2xl h-64 opacity-20 blur-3xl pointer-events-none" style="background: radial-gradient(circle, #4f46e5, transparent);"></div>
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-2xl h-64 opacity-20 blur-3xl pointer-events-none" style="background: radial-gradient(circle, #06b6d4, transparent);"></div>
 
     <div class="max-w-7xl mx-auto px-4 relative">
         <!-- Section Header -->
         <div class="text-center mb-14">
-            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full mb-5" style="background: rgba(79,70,229,0.1); border: 1px solid rgba(79,70,229,0.3);">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full mb-5" style="background: rgba(6,182,212,0.1); border: 1px solid rgba(6,182,212,0.3);">
                 <i class="fa-solid fa-tags text-indigo-400 text-xs"></i>
                 <span class="text-xs font-manrope font-600 text-indigo-300 tracking-widest uppercase">Planes & Precios</span>
             </div>
@@ -855,7 +861,7 @@
                     </div>
                 </div>
 
-                <div class="rounded-card p-7 flex flex-col h-full" style="background: rgba(14, 14, 40, 0.95); border: 1.5px solid #4f46e5; box-shadow: 0 0 40px rgba(79,70,229,0.3), 0 0 80px rgba(79,70,229,0.1), inset 0 0 30px rgba(79,70,229,0.05);">
+                <div class="rounded-card p-7 flex flex-col h-full" style="background: rgba(3, 7, 18, 0.95); border: 1.5px solid #06b6d4; box-shadow: 0 0 40px rgba(6,182,212,0.3), 0 0 80px rgba(6,182,212,0.1), inset 0 0 30px rgba(6,182,212,0.05);">
                     <div class="mb-6 mt-2">
                         <div class="flex items-center gap-2 mb-3">
                             <i class="fa-regular fa-calendar-days text-indigo-400 text-sm"></i>
@@ -963,10 +969,10 @@
 <!-- ============================================================
      COMPATIBILITY SECTION
      ============================================================ -->
-<section id="compatibility" class="relative py-20 md:py-28" style="background: linear-gradient(to bottom, #0a0a1a, #141432);">
+<section id="compatibility" class="relative py-20 md:py-28" style="background: linear-gradient(to bottom, #030712, #0f172a);">
     <div class="max-w-7xl mx-auto px-4">
         <div class="text-center mb-14">
-            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full mb-5" style="background: rgba(79,70,229,0.1); border: 1px solid rgba(79,70,229,0.3);">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full mb-5" style="background: rgba(6,182,212,0.1); border: 1px solid rgba(6,182,212,0.3);">
                 <i class="fa-solid fa-mobile-screen-button text-indigo-400 text-xs"></i>
                 <span class="text-xs font-manrope font-600 text-indigo-300 tracking-widest uppercase">Compatibilidad</span>
             </div>
@@ -1021,7 +1027,7 @@
             </div>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div class="flex flex-col items-center text-center gap-3">
-                    <div class="w-12 h-12 rounded-full flex items-center justify-center font-sora font-700 text-white text-lg" style="background: linear-gradient(135deg, #4f46e5, #6366f1); box-shadow: 0 0 20px rgba(79,70,229,0.4);">1</div>
+                    <div class="w-12 h-12 rounded-full flex items-center justify-center font-sora font-700 text-white text-lg" style="background: linear-gradient(135deg, #06b6d4, #22d3ee); box-shadow: 0 0 20px rgba(6,182,212,0.4);">1</div>
                     <div class="w-px h-0 md:hidden"></div>
                     <div>
                         <h4 class="font-sora font-700 text-white text-sm mb-1.5">Elige tu plan</h4>
@@ -1029,14 +1035,14 @@
                     </div>
                 </div>
                 <div class="flex flex-col items-center text-center gap-3">
-                    <div class="w-12 h-12 rounded-full flex items-center justify-center font-sora font-700 text-white text-lg" style="background: linear-gradient(135deg, #4f46e5, #6366f1); box-shadow: 0 0 20px rgba(79,70,229,0.4);">2</div>
+                    <div class="w-12 h-12 rounded-full flex items-center justify-center font-sora font-700 text-white text-lg" style="background: linear-gradient(135deg, #06b6d4, #22d3ee); box-shadow: 0 0 20px rgba(6,182,212,0.4);">2</div>
                     <div>
                         <h4 class="font-sora font-700 text-white text-sm mb-1.5">Recibe tus credenciales</h4>
                         <p class="font-manrope text-white/50 text-xs leading-relaxed">Recibirás tu usuario y contraseña al instante por correo electrónico y WhatsApp.</p>
                     </div>
                 </div>
                 <div class="flex flex-col items-center text-center gap-3">
-                    <div class="w-12 h-12 rounded-full flex items-center justify-center font-sora font-700 text-white text-lg" style="background: linear-gradient(135deg, #4f46e5, #6366f1); box-shadow: 0 0 20px rgba(79,70,229,0.4);">3</div>
+                    <div class="w-12 h-12 rounded-full flex items-center justify-center font-sora font-700 text-white text-lg" style="background: linear-gradient(135deg, #06b6d4, #22d3ee); box-shadow: 0 0 20px rgba(6,182,212,0.4);">3</div>
                     <div>
                         <h4 class="font-sora font-700 text-white text-sm mb-1.5">¡Empieza a ver!</h4>
                         <p class="font-manrope text-white/50 text-xs leading-relaxed">Instala la app en tu dispositivo, ingresa tus datos y disfruta miles de canales al instante.</p>
@@ -1050,7 +1056,7 @@
 <!-- ============================================================
      TESTIMONIALS / SOCIAL PROOF
      ============================================================ -->
-<section id="testimonials" class="relative py-20" style="background: #141432;">
+<section id="testimonials" class="relative py-20" style="background: #0f172a;">
     <div class="absolute inset-0 dot-grid opacity-30 pointer-events-none"></div>
     <div class="max-w-7xl mx-auto px-4 relative">
         <div class="text-center mb-12">
@@ -1124,11 +1130,11 @@
 <!-- ============================================================
      CTA BANNER
      ============================================================ -->
-<section id="cta-banner" class="relative py-20 md:py-24 overflow-hidden" style="background: #0a0a1a;">
-    <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(ellipse at 50% 50%, rgba(79,70,229,0.18) 0%, transparent 70%);"></div>
+<section id="cta-banner" class="relative py-20 md:py-24 overflow-hidden" style="background: #030712;">
+    <div class="absolute inset-0 pointer-events-none" style="background: radial-gradient(ellipse at 50% 50%, rgba(6,182,212,0.18) 0%, transparent 70%);"></div>
     <div class="max-w-4xl mx-auto px-4 relative text-center">
-        <div class="glass-card rounded-card p-10 md:p-16" style="border: 1px solid rgba(79,70,229,0.25);">
-            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full mb-6" style="background: rgba(79,70,229,0.15); border: 1px solid rgba(79,70,229,0.3);">
+        <div class="glass-card rounded-card p-10 md:p-16" style="border: 1px solid rgba(6,182,212,0.25);">
+            <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full mb-6" style="background: rgba(6,182,212,0.15); border: 1px solid rgba(6,182,212,0.3);">
                 <div class="pulse-dot w-2 h-2 rounded-full bg-blue-400"></div>
                 <span class="text-xs font-manrope font-600 text-blue-300 tracking-wider">Servidores activos · Activación inmediata</span>
             </div>
@@ -1154,14 +1160,14 @@
 <!-- ============================================================
      FOOTER
      ============================================================ -->
-<footer id="footer" style="background: #06060f; border-top: 1px solid rgba(79,70,229,0.12);" class="py-16">
+<footer id="footer" style="background: #06060f; border-top: 1px solid rgba(6,182,212,0.12);" class="py-16">
     <div class="max-w-7xl mx-auto px-4">
         <div class="grid grid-cols-1 md:grid-cols-4 gap-10 mb-12">
             <!-- Brand -->
             <div class="md:col-span-1">
                 <div class="flex items-center gap-2.5 mb-4">
-                    <div class="w-8 h-8 rounded-card bg-indigo-500 flex items-center justify-center neon-glow flex-shrink-0">
-                        <i class="fa-solid fa-play text-white text-xs"></i>
+                    <div class="brand-mark w-8 h-8 rounded-card flex items-center justify-center flex-shrink-0">
+                        <i class="fa-solid fa-satellite-dish text-white text-xs"></i>
                     </div>
                     <span class="font-sora font-700 text-white text-lg">Stream<span class="gradient-text">Colombia</span></span>
                 </div>
@@ -1310,3 +1316,4 @@
 <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 </html>
+
