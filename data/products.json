@@ -1,219 +1,436 @@
 ﻿[
-  {
-    "slug": "fire-tv-stick-hd",
-    "name": "Fire TV Stick HD",
-    "category": "Fire TV Stick",
-    "price": 39.99,
-    "oldPrice": 49.99,
-    "badge": "Oferta",
-    "available": true,
-    "stock": "Disponible bajo confirmación",
-    "popular": 87,
-    "resolution": "Full HD 1080p",
-    "os": "Fire OS",
-    "ram": "Dato por confirmar",
-    "storage": "Dato por confirmar",
-    "wifi": "Wi-Fi compatible",
-    "bluetooth": "Sí",
-    "voice": "Compatible según versión del mando",
-    "recommendedUse": "Televisores Full HD y uso diario de apps legales",
-    "variants": ["Nuevo", "Con accesorio HDMI"],
-    "summary": "Dispositivo compacto para transformar un televisor con HDMI en un centro de entretenimiento conectado.",
-    "description": "Opción práctica para quienes quieren acceder a aplicaciones legales de streaming con una instalación sencilla y un mando fácil de usar.",
-    "features": ["Diseño compacto", "Instalación por HDMI", "Mando incluido según proveedor", "Compatible con apps legales disponibles en la tienda del sistema"],
-    "box": ["Dispositivo", "Mando", "Cable o extensor HDMI según proveedor", "Adaptador de corriente", "Guía rápida"],
-    "compatibility": ["Televisores con entrada HDMI", "Red Wi-Fi doméstica", "Cuenta de usuario para las aplicaciones que lo requieran"],
-    "warranty": "Garantía en productos seleccionados según condiciones de VisionBox Tech.",
-    "shipping": "Envíos dentro de Portugal bajo confirmación por WhatsApp."
-  },
-  {
-    "slug": "fire-tv-stick-4k",
-    "name": "Fire TV Stick 4K",
-    "category": "Fire TV Stick",
-    "price": 54.99,
-    "oldPrice": 64.99,
-    "badge": "4K",
-    "available": true,
-    "stock": "Disponible bajo confirmación",
-    "popular": 94,
-    "resolution": "4K Ultra HD",
-    "os": "Fire OS",
-    "ram": "Dato por confirmar",
-    "storage": "Dato por confirmar",
-    "wifi": "Wi-Fi compatible",
-    "bluetooth": "Sí",
-    "voice": "Compatible según versión del mando",
-    "recommendedUse": "Televisores 4K y usuarios que buscan mejor calidad de imagen",
-    "variants": ["Nuevo", "Pack con cable HDMI"],
-    "summary": "Streaming en alta resolución para televisores 4K compatibles y aplicaciones legales.",
-    "description": "Producto pensado para mejorar la experiencia visual en televisores modernos, manteniendo un formato pequeño y fácil de instalar.",
-    "features": ["Salida 4K en televisores compatibles", "Formato tipo stick", "Configuración guiada", "Compatible con múltiples aplicaciones legales"],
-    "box": ["Dispositivo", "Mando", "Adaptador de corriente", "Cable USB", "Guía rápida"],
-    "compatibility": ["TV con HDMI", "Internet Wi-Fi", "Servicios legales con suscripción propia cuando aplique"],
-    "warranty": "Garantía comercial según disponibilidad y proveedor.",
-    "shipping": "Entrega coordinada desde Portugal."
-  },
-  {
-    "slug": "fire-tv-stick-4k-max",
-    "name": "Fire TV Stick 4K Max",
-    "category": "Fire TV Stick",
-    "price": 69.99,
-    "oldPrice": 79.99,
-    "badge": "Nuevo",
-    "available": true,
-    "stock": "Stock limitado real, confirmar antes de pagar",
-    "popular": 98,
-    "resolution": "4K Ultra HD",
-    "os": "Fire OS",
-    "ram": "Dato por confirmar",
-    "storage": "Dato por confirmar",
-    "wifi": "Wi-Fi avanzado según versión",
-    "bluetooth": "Sí",
-    "voice": "Compatible según versión del mando",
-    "recommendedUse": "Usuarios exigentes con TV 4K y varias apps legales",
-    "variants": ["Nuevo", "Combo con teclado inalámbrico"],
-    "summary": "Versión avanzada para una experiencia más fluida en televisores 4K compatibles.",
-    "description": "Equipo recomendado para quienes buscan mayor rendimiento y una navegación más rápida entre aplicaciones legales de entretenimiento.",
-    "features": ["Rendimiento superior dentro de la línea stick", "Compatible con 4K", "Formato discreto", "Ideal para salas principales"],
-    "box": ["Dispositivo", "Mando", "Cable USB", "Adaptador", "Guía rápida"],
-    "compatibility": ["Televisor 4K recomendado", "Entrada HDMI", "Conexión Wi-Fi estable"],
-    "warranty": "Garantía en productos seleccionados.",
-    "shipping": "Envíos seguros en Portugal bajo confirmación."
-  },
-  {
-    "slug": "android-tv-box-pro",
-    "name": "Android TV Box Pro",
-    "category": "Android TV Box",
-    "price": 59.99,
-    "oldPrice": null,
-    "badge": "Popular",
-    "available": true,
-    "stock": "Disponible bajo confirmación",
-    "popular": 90,
-    "resolution": "Hasta 4K según modelo",
-    "os": "Android / Android TV según modelo",
-    "ram": "Dato por confirmar",
-    "storage": "Dato por confirmar",
-    "wifi": "Wi-Fi compatible",
-    "bluetooth": "Según modelo",
-    "voice": "Según mando incluido",
-    "recommendedUse": "Usuarios que quieren más puertos y flexibilidad de apps legales",
-    "variants": ["2 GB RAM", "4 GB RAM", "Con teclado inalámbrico"],
-    "summary": "Caja multimedia versátil para televisores con HDMI y accesorios externos.",
-    "description": "Una solución flexible para quienes prefieren un equipo de sobremesa con puertos adicionales y posibilidades de configuración más amplias.",
-    "features": ["Puertos USB según modelo", "Salida HDMI", "Uso con teclados y mandos", "Compatible con apps legales disponibles"],
-    "box": ["TV Box", "Mando", "Cable HDMI", "Adaptador de corriente", "Manual"],
-    "compatibility": ["TV con HDMI", "Wi-Fi o Ethernet según modelo", "Accesorios USB compatibles"],
-    "warranty": "Garantía sujeta a revisión del equipo y condiciones de compra.",
-    "shipping": "Preparación y envío coordinado por WhatsApp."
-  },
-  {
-    "slug": "google-tv-box",
-    "name": "Google TV Box",
-    "category": "Google TV",
-    "price": 74.99,
-    "oldPrice": null,
-    "badge": "Nuevo",
-    "available": true,
-    "stock": "Disponible bajo confirmación",
-    "popular": 83,
-    "resolution": "Hasta 4K según modelo",
-    "os": "Google TV / Android TV según modelo",
-    "ram": "Dato por confirmar",
-    "storage": "Dato por confirmar",
-    "wifi": "Wi-Fi compatible",
-    "bluetooth": "Sí, según modelo",
-    "voice": "Compatible según mando",
-    "recommendedUse": "Usuarios que prefieren una interfaz moderna y organizada",
-    "variants": ["Estándar", "4K"],
-    "summary": "Dispositivo con interfaz moderna para organizar tus aplicaciones legales favoritas.",
-    "description": "Equipo orientado a una navegación clara y una experiencia sencilla para instalar aplicaciones compatibles desde fuentes oficiales.",
-    "features": ["Interfaz ordenada", "Compatible con apps legales", "Búsqueda y control según modelo", "Diseño compacto"],
-    "box": ["Dispositivo", "Mando", "Cable HDMI o integrado según modelo", "Adaptador", "Guía rápida"],
-    "compatibility": ["Televisor HDMI", "Cuenta de usuario cuando aplique", "Wi-Fi doméstico"],
-    "warranty": "Garantía comercial según condiciones.",
-    "shipping": "Entrega dentro de Portugal a confirmar."
-  },
-  {
-    "slug": "v-box-streaming",
-    "name": "V Box Streaming",
-    "category": "V Box",
-    "price": 49.99,
-    "oldPrice": 59.99,
-    "badge": "Oferta",
-    "available": false,
-    "stock": "Agotado temporalmente",
-    "popular": 70,
-    "resolution": "Hasta Full HD / 4K según modelo",
-    "os": "Sistema del fabricante",
-    "ram": "Dato por confirmar",
-    "storage": "Dato por confirmar",
-    "wifi": "Wi-Fi compatible",
-    "bluetooth": "Dato por confirmar",
-    "voice": "Dato por confirmar",
-    "recommendedUse": "Clientes que buscan una alternativa económica",
-    "variants": ["Modelo base"],
-    "summary": "Alternativa compacta para convertir tu televisor en un equipo conectado.",
-    "description": "Producto de entrada para usuarios que quieren una solución sencilla. Confirmar especificaciones antes de comprar.",
-    "features": ["Diseño compacto", "Instalación sencilla", "Compatibilidad por confirmar", "Precio accesible"],
-    "box": ["V Box", "Mando", "Cable HDMI", "Adaptador"],
-    "compatibility": ["TV HDMI", "Wi-Fi"],
-    "warranty": "Garantía según disponibilidad del producto.",
-    "shipping": "Producto agotado temporalmente."
-  },
-  {
-    "slug": "air-mouse-keyboard",
-    "name": "Air Mouse con teclado inalámbrico",
-    "category": "Controles y mandos",
-    "price": 18.99,
-    "oldPrice": null,
-    "badge": "Accesorio",
-    "available": true,
-    "stock": "Disponible bajo confirmación",
-    "popular": 76,
-    "resolution": "No aplica",
-    "os": "Compatible según dispositivo",
-    "ram": "No aplica",
-    "storage": "No aplica",
-    "wifi": "No aplica",
-    "bluetooth": "Según modelo / receptor USB",
-    "voice": "No confirmado",
-    "recommendedUse": "Escribir búsquedas y navegar con más comodidad",
-    "variants": ["Receptor USB", "Retroiluminado según disponibilidad"],
-    "summary": "Control inalámbrico práctico para TV Box y equipos compatibles.",
-    "description": "Accesorio útil para navegar, escribir búsquedas y controlar aplicaciones de forma más cómoda.",
-    "features": ["Teclado integrado", "Control tipo mouse aéreo", "Diseño ligero", "Conexión por receptor según modelo"],
-    "box": ["Air Mouse", "Receptor USB según modelo", "Guía rápida"],
-    "compatibility": ["TV Box con USB", "Algunos smart TV compatibles", "PC según modelo"],
-    "warranty": "Garantía en productos seleccionados.",
-    "shipping": "Envío junto con equipos o por separado."
-  },
-  {
-    "slug": "hdmi-accessory-kit",
-    "name": "Kit HDMI y adaptador de corriente",
-    "category": "Cables y adaptadores",
-    "price": 14.99,
-    "oldPrice": 19.99,
-    "badge": "Combo",
-    "available": true,
-    "stock": "Disponible bajo confirmación",
-    "popular": 65,
-    "resolution": "Compatible con señal según cable",
-    "os": "No aplica",
-    "ram": "No aplica",
-    "storage": "No aplica",
-    "wifi": "No aplica",
-    "bluetooth": "No aplica",
-    "voice": "No aplica",
-    "recommendedUse": "Reemplazo o instalación ordenada de dispositivos de streaming",
-    "variants": ["Cable corto", "Cable largo"],
-    "summary": "Accesorios básicos para instalar o reemplazar conexiones de tu dispositivo.",
-    "description": "Kit pensado para instalaciones limpias y para reemplazar accesorios dañados o extraviados.",
-    "features": ["Cable HDMI", "Adaptador de corriente", "Instalación sencilla", "Ideal como repuesto"],
-    "box": ["Cable HDMI", "Adaptador", "Extensor según disponibilidad"],
-    "compatibility": ["Dispositivos HDMI", "TV Box", "Sticks de streaming compatibles"],
-    "warranty": "Garantía según condiciones del accesorio.",
-    "shipping": "Disponible para envío en Portugal."
-  }
+    {
+        "slug":  "fire-tv-stick-hd",
+        "name":  "Fire TV Stick HD",
+        "category":  "Fire TV Stick",
+        "price":  39.99,
+        "oldPrice":  49.99,
+        "badge":  "Oferta",
+        "available":  true,
+        "stock":  "Disponible bajo confirmación",
+        "popular":  87,
+        "resolution":  "Full HD 1080p",
+        "os":  "Fire OS",
+        "ram":  "Dato por confirmar",
+        "storage":  "Dato por confirmar",
+        "wifi":  "Wi-Fi compatible",
+        "bluetooth":  "Sí",
+        "voice":  "Compatible según versión del mando",
+        "recommendedUse":  "Televisores Full HD y uso diario de apps legales",
+        "variants":  [
+                         "Nuevo",
+                         "Con accesorio HDMI"
+                     ],
+        "summary":  "Dispositivo compacto para transformar un televisor con HDMI en un centro de entretenimiento conectado.",
+        "description":  "Opción práctica para quienes quieren acceder a aplicaciones legales de streaming con una instalación sencilla y un mando fácil de usar.",
+        "features":  [
+                         "Diseño compacto",
+                         "Instalación por HDMI",
+                         "Mando incluido según proveedor",
+                         "Compatible con apps legales disponibles en la tienda del sistema"
+                     ],
+        "box":  [
+                    "Dispositivo",
+                    "Mando",
+                    "Cable o extensor HDMI según proveedor",
+                    "Adaptador de corriente",
+                    "Guía rápida"
+                ],
+        "compatibility":  [
+                              "Televisores con entrada HDMI",
+                              "Red Wi-Fi doméstica",
+                              "Cuenta de usuario para las aplicaciones que lo requieran"
+                          ],
+        "warranty":  "Garantía en productos seleccionados según condiciones de VisionBox Tech.",
+        "shipping":  "Envíos dentro de Portugal bajo confirmación por WhatsApp.",
+        "image":  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Fire-TV_Stick_and_Remote.jpg/960px-Fire-TV_Stick_and_Remote.jpg",
+        "imageAlt":  "Amazon Fire TV Stick with remote control",
+        "imageCredit":  {
+                            "label":  "Wikimedia Commons - Fire TV Stick and Remote",
+                            "url":  "https://commons.wikimedia.org/wiki/File:Fire-TV_Stick_and_Remote.jpg"
+                        },
+        "tutorial":  {
+                         "id":  "swc4q1HxZV8",
+                         "title":  "Setting up a New Amazon Fire TV Stick"
+                     }
+    },
+    {
+        "slug":  "fire-tv-stick-4k",
+        "name":  "Fire TV Stick 4K",
+        "category":  "Fire TV Stick",
+        "price":  54.99,
+        "oldPrice":  64.99,
+        "badge":  "4K",
+        "available":  true,
+        "stock":  "Disponible bajo confirmación",
+        "popular":  94,
+        "resolution":  "4K Ultra HD",
+        "os":  "Fire OS",
+        "ram":  "Dato por confirmar",
+        "storage":  "Dato por confirmar",
+        "wifi":  "Wi-Fi compatible",
+        "bluetooth":  "Sí",
+        "voice":  "Compatible según versión del mando",
+        "recommendedUse":  "Televisores 4K y usuarios que buscan mejor calidad de imagen",
+        "variants":  [
+                         "Nuevo",
+                         "Pack con cable HDMI"
+                     ],
+        "summary":  "Streaming en alta resolución para televisores 4K compatibles y aplicaciones legales.",
+        "description":  "Producto pensado para mejorar la experiencia visual en televisores modernos, manteniendo un formato pequeño y fácil de instalar.",
+        "features":  [
+                         "Salida 4K en televisores compatibles",
+                         "Formato tipo stick",
+                         "Configuración guiada",
+                         "Compatible con múltiples aplicaciones legales"
+                     ],
+        "box":  [
+                    "Dispositivo",
+                    "Mando",
+                    "Adaptador de corriente",
+                    "Cable USB",
+                    "Guía rápida"
+                ],
+        "compatibility":  [
+                              "TV con HDMI",
+                              "Internet Wi-Fi",
+                              "Servicios legales con suscripción propia cuando aplique"
+                          ],
+        "warranty":  "Garantía comercial según disponibilidad y proveedor.",
+        "shipping":  "Entrega coordinada desde Portugal.",
+        "image":  "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Amazon_Fire_TV_Stick_HDMI.jpg/960px-Amazon_Fire_TV_Stick_HDMI.jpg",
+        "imageAlt":  "Amazon Fire TV Stick HDMI device",
+        "imageCredit":  {
+                            "label":  "Wikimedia Commons - Amazon Fire TV Stick HDMI",
+                            "url":  "https://commons.wikimedia.org/wiki/File:Amazon_Fire_TV_Stick_HDMI.jpg"
+                        },
+        "tutorial":  {
+                         "id":  "zRTN1ykLyhY",
+                         "title":  "Fire TV Stick 4K setup step by step"
+                     }
+    },
+    {
+        "slug":  "fire-tv-stick-4k-max",
+        "name":  "Fire TV Stick 4K Max",
+        "category":  "Fire TV Stick",
+        "price":  69.99,
+        "oldPrice":  79.99,
+        "badge":  "Nuevo",
+        "available":  true,
+        "stock":  "Stock limitado real, confirmar antes de pagar",
+        "popular":  98,
+        "resolution":  "4K Ultra HD",
+        "os":  "Fire OS",
+        "ram":  "Dato por confirmar",
+        "storage":  "Dato por confirmar",
+        "wifi":  "Wi-Fi avanzado según versión",
+        "bluetooth":  "Sí",
+        "voice":  "Compatible según versión del mando",
+        "recommendedUse":  "Usuarios exigentes con TV 4K y varias apps legales",
+        "variants":  [
+                         "Nuevo",
+                         "Combo con teclado inalámbrico"
+                     ],
+        "summary":  "Versión avanzada para una experiencia más fluida en televisores 4K compatibles.",
+        "description":  "Equipo recomendado para quienes buscan mayor rendimiento y una navegación más rápida entre aplicaciones legales de entretenimiento.",
+        "features":  [
+                         "Rendimiento superior dentro de la línea stick",
+                         "Compatible con 4K",
+                         "Formato discreto",
+                         "Ideal para salas principales"
+                     ],
+        "box":  [
+                    "Dispositivo",
+                    "Mando",
+                    "Cable USB",
+                    "Adaptador",
+                    "Guía rápida"
+                ],
+        "compatibility":  [
+                              "Televisor 4K recomendado",
+                              "Entrada HDMI",
+                              "Conexión Wi-Fi estable"
+                          ],
+        "warranty":  "Garantía en productos seleccionados.",
+        "shipping":  "Envíos seguros en Portugal bajo confirmación.",
+        "image":  "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2d/Amazon_Fire_TV_Stick_%281st_generation%29-48855.jpg/960px-Amazon_Fire_TV_Stick_%281st_generation%29-48855.jpg",
+        "imageAlt":  "Amazon Fire TV Stick product photo",
+        "imageCredit":  {
+                            "label":  "Wikimedia Commons - Fire TV Stick photo",
+                            "url":  "https://commons.wikimedia.org/wiki/File:Amazon_Fire_TV_Stick_(1st_generation)-48855.jpg"
+                        },
+        "tutorial":  {
+                         "id":  "unrELx3MoMw",
+                         "title":  "How to setup a new Amazon Fire TV Stick"
+                     }
+    },
+    {
+        "slug":  "android-tv-box-pro",
+        "name":  "Android TV Box Pro",
+        "category":  "Android TV Box",
+        "price":  59.99,
+        "oldPrice":  null,
+        "badge":  "Popular",
+        "available":  true,
+        "stock":  "Disponible bajo confirmación",
+        "popular":  90,
+        "resolution":  "Hasta 4K según modelo",
+        "os":  "Android / Android TV según modelo",
+        "ram":  "Dato por confirmar",
+        "storage":  "Dato por confirmar",
+        "wifi":  "Wi-Fi compatible",
+        "bluetooth":  "Según modelo",
+        "voice":  "Según mando incluido",
+        "recommendedUse":  "Usuarios que quieren más puertos y flexibilidad de apps legales",
+        "variants":  [
+                         "2 GB RAM",
+                         "4 GB RAM",
+                         "Con teclado inalámbrico"
+                     ],
+        "summary":  "Caja multimedia versátil para televisores con HDMI y accesorios externos.",
+        "description":  "Una solución flexible para quienes prefieren un equipo de sobremesa con puertos adicionales y posibilidades de configuración más amplias.",
+        "features":  [
+                         "Puertos USB según modelo",
+                         "Salida HDMI",
+                         "Uso con teclados y mandos",
+                         "Compatible con apps legales disponibles"
+                     ],
+        "box":  [
+                    "TV Box",
+                    "Mando",
+                    "Cable HDMI",
+                    "Adaptador de corriente",
+                    "Manual"
+                ],
+        "compatibility":  [
+                              "TV con HDMI",
+                              "Wi-Fi o Ethernet según modelo",
+                              "Accesorios USB compatibles"
+                          ],
+        "warranty":  "Garantía sujeta a revisión del equipo y condiciones de compra.",
+        "shipping":  "Preparación y envío coordinado por WhatsApp.",
+        "image":  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Android_TV-based_Tracer_set_top_box.jpg/960px-Android_TV-based_Tracer_set_top_box.jpg",
+        "imageAlt":  "Android TV set top box with remote",
+        "imageCredit":  {
+                            "label":  "Wikimedia Commons - Android TV set top box",
+                            "url":  "https://commons.wikimedia.org/wiki/File:Android_TV-based_Tracer_set_top_box.jpg"
+                        },
+        "tutorial":  {
+                         "id":  "Yg2JJTkJE8c",
+                         "title":  "Android TV setup guide for beginners"
+                     }
+    },
+    {
+        "slug":  "google-tv-box",
+        "name":  "Google TV Box",
+        "category":  "Google TV",
+        "price":  74.99,
+        "oldPrice":  null,
+        "badge":  "Nuevo",
+        "available":  true,
+        "stock":  "Disponible bajo confirmación",
+        "popular":  83,
+        "resolution":  "Hasta 4K según modelo",
+        "os":  "Google TV / Android TV según modelo",
+        "ram":  "Dato por confirmar",
+        "storage":  "Dato por confirmar",
+        "wifi":  "Wi-Fi compatible",
+        "bluetooth":  "Sí, según modelo",
+        "voice":  "Compatible según mando",
+        "recommendedUse":  "Usuarios que prefieren una interfaz moderna y organizada",
+        "variants":  [
+                         "Estándar",
+                         "4K"
+                     ],
+        "summary":  "Dispositivo con interfaz moderna para organizar tus aplicaciones legales favoritas.",
+        "description":  "Equipo orientado a una navegación clara y una experiencia sencilla para instalar aplicaciones compatibles desde fuentes oficiales.",
+        "features":  [
+                         "Interfaz ordenada",
+                         "Compatible con apps legales",
+                         "Búsqueda y control según modelo",
+                         "Diseño compacto"
+                     ],
+        "box":  [
+                    "Dispositivo",
+                    "Mando",
+                    "Cable HDMI o integrado según modelo",
+                    "Adaptador",
+                    "Guía rápida"
+                ],
+        "compatibility":  [
+                              "Televisor HDMI",
+                              "Cuenta de usuario cuando aplique",
+                              "Wi-Fi doméstico"
+                          ],
+        "warranty":  "Garantía comercial según condiciones.",
+        "shipping":  "Entrega dentro de Portugal a confirmar.",
+        "image":  "https://commons.wikimedia.org/wiki/Special:FilePath/Chromecast-with-Google-TV-snow-color-on-wood-table2.jpg?width=900",
+        "imageAlt":  "Chromecast with Google TV and remote",
+        "imageCredit":  {
+                            "label":  "Wikimedia Commons - Chromecast with Google TV",
+                            "url":  "https://commons.wikimedia.org/wiki/File:Chromecast-with-Google-TV-snow-color-on-wood-table2.jpg"
+                        },
+        "tutorial":  {
+                         "id":  "_KN7AYkyY3c",
+                         "title":  "Google TV setup walkthrough"
+                     }
+    },
+    {
+        "slug":  "v-box-streaming",
+        "name":  "V Box Streaming",
+        "category":  "V Box",
+        "price":  49.99,
+        "oldPrice":  59.99,
+        "badge":  "Oferta",
+        "available":  false,
+        "stock":  "Agotado temporalmente",
+        "popular":  70,
+        "resolution":  "Hasta Full HD / 4K según modelo",
+        "os":  "Sistema del fabricante",
+        "ram":  "Dato por confirmar",
+        "storage":  "Dato por confirmar",
+        "wifi":  "Wi-Fi compatible",
+        "bluetooth":  "Dato por confirmar",
+        "voice":  "Dato por confirmar",
+        "recommendedUse":  "Clientes que buscan una alternativa económica",
+        "variants":  [
+                         "Modelo base"
+                     ],
+        "summary":  "Alternativa compacta para convertir tu televisor en un equipo conectado.",
+        "description":  "Producto de entrada para usuarios que quieren una solución sencilla. Confirmar especificaciones antes de comprar.",
+        "features":  [
+                         "Diseño compacto",
+                         "Instalación sencilla",
+                         "Compatibilidad por confirmar",
+                         "Precio accesible"
+                     ],
+        "box":  [
+                    "V Box",
+                    "Mando",
+                    "Cable HDMI",
+                    "Adaptador"
+                ],
+        "compatibility":  [
+                              "TV HDMI",
+                              "Wi-Fi"
+                          ],
+        "warranty":  "Garantía según disponibilidad del producto.",
+        "shipping":  "Producto agotado temporalmente.",
+        "image":  "https://commons.wikimedia.org/wiki/Special:FilePath/Android%20TV.jpg?width=900",
+        "imageAlt":  "Android TV streaming device interface",
+        "imageCredit":  {
+                            "label":  "Wikimedia Commons - Android TV",
+                            "url":  "https://commons.wikimedia.org/wiki/File:Android_TV.jpg"
+                        },
+        "tutorial":  {
+                         "id":  "1DwckUskm8E",
+                         "title":  "How to install a TV box on a television"
+                     }
+    },
+    {
+        "slug":  "air-mouse-keyboard",
+        "name":  "Air Mouse con teclado inalámbrico",
+        "category":  "Controles y mandos",
+        "price":  18.99,
+        "oldPrice":  null,
+        "badge":  "Accesorio",
+        "available":  true,
+        "stock":  "Disponible bajo confirmación",
+        "popular":  76,
+        "resolution":  "No aplica",
+        "os":  "Compatible según dispositivo",
+        "ram":  "No aplica",
+        "storage":  "No aplica",
+        "wifi":  "No aplica",
+        "bluetooth":  "Según modelo / receptor USB",
+        "voice":  "No confirmado",
+        "recommendedUse":  "Escribir búsquedas y navegar con más comodidad",
+        "variants":  [
+                         "Receptor USB",
+                         "Retroiluminado según disponibilidad"
+                     ],
+        "summary":  "Control inalámbrico práctico para TV Box y equipos compatibles.",
+        "description":  "Accesorio útil para navegar, escribir búsquedas y controlar aplicaciones de forma más cómoda.",
+        "features":  [
+                         "Teclado integrado",
+                         "Control tipo mouse aéreo",
+                         "Diseño ligero",
+                         "Conexión por receptor según modelo"
+                     ],
+        "box":  [
+                    "Air Mouse",
+                    "Receptor USB según modelo",
+                    "Guía rápida"
+                ],
+        "compatibility":  [
+                              "TV Box con USB",
+                              "Algunos smart TV compatibles",
+                              "PC según modelo"
+                          ],
+        "warranty":  "Garantía en productos seleccionados.",
+        "shipping":  "Envío junto con equipos o por separado.",
+        "image":  "https://commons.wikimedia.org/wiki/Special:FilePath/Remote%20Control%2C%20Television%20-%20TV-controller.jpg?width=900",
+        "imageAlt":  "Television remote control accessory",
+        "imageCredit":  {
+                            "label":  "Wikimedia Commons - TV remote control",
+                            "url":  "https://commons.wikimedia.org/wiki/File:Remote_Control,_Television_-_TV-controller.jpg"
+                        },
+        "tutorial":  {
+                         "id":  "8gR8wPIUxUY",
+                         "title":  "Setting up an Air Mouse remote control"
+                     }
+    },
+    {
+        "slug":  "hdmi-accessory-kit",
+        "name":  "Kit HDMI y adaptador de corriente",
+        "category":  "Cables y adaptadores",
+        "price":  14.99,
+        "oldPrice":  19.99,
+        "badge":  "Combo",
+        "available":  true,
+        "stock":  "Disponible bajo confirmación",
+        "popular":  65,
+        "resolution":  "Compatible con señal según cable",
+        "os":  "No aplica",
+        "ram":  "No aplica",
+        "storage":  "No aplica",
+        "wifi":  "No aplica",
+        "bluetooth":  "No aplica",
+        "voice":  "No aplica",
+        "recommendedUse":  "Reemplazo o instalación ordenada de dispositivos de streaming",
+        "variants":  [
+                         "Cable corto",
+                         "Cable largo"
+                     ],
+        "summary":  "Accesorios básicos para instalar o reemplazar conexiones de tu dispositivo.",
+        "description":  "Kit pensado para instalaciones limpias y para reemplazar accesorios dañados o extraviados.",
+        "features":  [
+                         "Cable HDMI",
+                         "Adaptador de corriente",
+                         "Instalación sencilla",
+                         "Ideal como repuesto"
+                     ],
+        "box":  [
+                    "Cable HDMI",
+                    "Adaptador",
+                    "Extensor según disponibilidad"
+                ],
+        "compatibility":  [
+                              "Dispositivos HDMI",
+                              "TV Box",
+                              "Sticks de streaming compatibles"
+                          ],
+        "warranty":  "Garantía según condiciones del accesorio.",
+        "shipping":  "Disponible para envío en Portugal.",
+        "image":  "https://commons.wikimedia.org/wiki/Special:FilePath/HDMI%20Cable.JPG?width=900",
+        "imageAlt":  "HDMI cable close up",
+        "imageCredit":  {
+                            "label":  "Wikimedia Commons - HDMI Cable",
+                            "url":  "https://commons.wikimedia.org/wiki/File:HDMI_Cable.JPG"
+                        },
+        "tutorial":  {
+                         "id":  "0DOE55weJxg",
+                         "title":  "How to connect HDMI cable to TV"
+                     }
+    }
 ]
-

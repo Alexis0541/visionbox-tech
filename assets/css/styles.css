@@ -67,8 +67,9 @@ h1 { margin: 18px 0 18px; font-size: clamp(42px, 6vw, 76px); line-height: .96; l
 .benefit { padding: 24px; }
 .benefit svg, .category-icon, .product-art { color: var(--green); }
 .product-card { overflow: hidden; display: flex; flex-direction: column; }
-.product-media { height: 180px; background: linear-gradient(135deg, #f2f4f7, #e8f7ee); display: grid; place-items: center; position: relative; }
+.product-media { height: 220px; background: linear-gradient(135deg, #f8fafc, #e8f7ee); display: grid; place-items: center; position: relative; overflow: hidden; }
 .product-art { width: 116px; height: 116px; }
+.product-photo { width: 100%; height: 100%; object-fit: contain; padding: 18px; mix-blend-mode: multiply; }
 .badge { position: absolute; top: 12px; left: 12px; background: #111827; color: white; border-radius: 999px; padding: 6px 10px; font-size: 12px; font-weight: 900; }
 .badge.offer { background: var(--orange); }
 .product-body { padding: 18px; display: grid; gap: 10px; flex: 1; }
@@ -113,7 +114,14 @@ textarea.input { min-height: 130px; padding-top: 12px; resize: vertical; }
 .notice { padding: 18px; border-radius: var(--radius); background: #fff7ed; border: 1px solid #fed7aa; color: #7c2d12; }
 .breadcrumb { color: var(--muted); font-size: 14px; margin-bottom: 22px; }
 .product-detail { display: grid; grid-template-columns: .9fr 1.1fr; gap: 32px; align-items: start; }
-.gallery { min-height: 420px; border-radius: 24px; background: linear-gradient(135deg, #f8fafc, #e8f7ee); display: grid; place-items: center; border: 1px solid var(--line); }
+.gallery { min-height: 420px; border-radius: 24px; background: linear-gradient(135deg, #f8fafc, #e8f7ee); display: grid; place-items: center; border: 1px solid var(--line); overflow: hidden; }
+.gallery .product-photo { min-height: 390px; padding: 28px; }
+.image-credit { color: var(--muted); font-size: 13px; line-height: 1.5; }
+.image-credit a { color: var(--green); font-weight: 800; text-decoration: underline; text-underline-offset: 3px; }
+.video-card { overflow: hidden; }
+.video-frame { aspect-ratio: 16 / 9; background: #101828; }
+.video-frame iframe { width: 100%; height: 100%; border: 0; display: block; }
+.video-body { padding: 16px; display: grid; gap: 12px; }
 .detail-list { display: grid; grid-template-columns: repeat(2,1fr); gap: 10px; margin: 18px 0; }
 .detail-list div { background: #f8fafc; border: 1px solid var(--line); padding: 12px; border-radius: 12px; }
 .legal-list { display: grid; gap: 18px; }
