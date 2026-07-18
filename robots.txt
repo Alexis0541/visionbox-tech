@@ -1,4 +1,3 @@
 ﻿User-agent: *
 Allow: /
-Sitemap: https://alexis0541.github.io/visionbox-tech/sitemap.xml
-
+Sitemap: https://visionboxtech.online/sitemap.xml
