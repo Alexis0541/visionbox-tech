@@ -7,15 +7,15 @@
         "oldPrice":  49.99,
         "badge":  "Oferta",
         "available":  true,
-        "stock":  "Consultar disponibilidad actual por WhatsApp",
+        "stock":  "Disponible",
         "popular":  87,
         "resolution":  "Full HD 1080p",
         "os":  "Fire OS",
-        "ram":  "Especificación variable por modelo",
+        "ram":  "1 GB",
         "storage":  "8 GB",
         "wifi":  "Dual-band Wi-Fi",
-        "bluetooth":  "Bluetooth compatible",
-        "voice":  "Alexa Voice Remote compatible",
+        "bluetooth":  "Bluetooth",
+        "voice":  "Alexa Voice Remote",
         "recommendedUse":  "Televisores Full HD y uso diario de apps legales",
         "variants":  [
                          "Nuevo",
@@ -26,13 +26,13 @@
         "features":  [
                          "Diseño compacto",
                          "Instalación por HDMI",
-                         "Mando incluido cuando forme parte del pack confirmado",
+                         "Mando incluido en el pack",
                          "Compatible con apps legales disponibles en la tienda del sistema"
                      ],
         "box":  [
                     "Dispositivo",
                     "Mando",
-                    "Cable o extensor HDMI si forma parte del pack confirmado",
+                    "Cable HDMI o extensor incluido en el pack",
                     "Adaptador de corriente",
                     "Guía rápida"
                 ],
@@ -41,8 +41,8 @@
                               "Red Wi-Fi doméstica",
                               "Cuenta de usuario para las aplicaciones que lo requieran"
                           ],
-        "warranty":  "Garantía comercial confirmada antes del pago según el estado del producto.",
-        "shipping":  "Envíos dentro de Portugal bajo confirmación por WhatsApp.",
+        "warranty":  "Garantía comercial de 30 días desde la entrega para fallos de funcionamiento no causados por golpes, humedad o manipulación.",
+        "shipping":  "Envíos dentro de Portugal por WhatsApp.",
         "image":  "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Fire-TV_Stick_and_Remote.jpg/960px-Fire-TV_Stick_and_Remote.jpg",
         "imageAlt":  "Amazon Fire TV Stick with remote control",
         "imageCredit":  {
@@ -62,23 +62,23 @@
                                                   ],
                                 "summary":  "Dispositivo compacto para transformar uma TV com HDMI num centro de entretenimento ligado.",
                                 "description":  "Opção prática para quem quer aceder a aplicações legais de streaming com instalação simples e comando fácil de usar.",
-                                "warranty":  "Garantia comercial confirmada antes do pagamento conforme o estado do produto.",
+                                "warranty":  "Garantia comercial de 30 dias a partir da entrega para falhas de funcionamento não causadas por quedas, humidade ou manipulação.",
                                 "category":  "Fire TV Stick",
-                                "shipping":  "Envios em Portugal mediante confirmação por WhatsApp.",
-                                "stock":  "Consultar disponibilidade atual por WhatsApp",
+                                "shipping":  "Envios em Portugal por WhatsApp.",
+                                "stock":  "Disponível",
                                 "badge":  "Oferta",
                                 "recommendedUse":  "Televisores Full HD e uso diário de aplicações legais",
                                 "box":  [
                                             "Dispositivo",
                                             "Comando",
-                                            "Cabo ou extensor HDMI se fizer parte do pack confirmado",
+                                            "Cabo HDMI ou extensor incluído no pack",
                                             "Adaptador de corrente",
                                             "Guia rápido"
                                         ],
                                 "features":  [
                                                  "Design compacto",
                                                  "Instalação por HDMI",
-                                                 "Comando incluído quando fizer parte do pack confirmado",
+                                                 "Comando incluído no pack",
                                                  "Compatível com aplicações legais disponíveis na loja do sistema"
                                              ]
                             },
@@ -90,23 +90,23 @@
                                                   ],
                                 "summary":  "Dispositivo compacto para transformar un televisor con HDMI en un centro de entretenimiento conectado.",
                                 "description":  "Opción práctica para quienes quieren acceder a aplicaciones legales de streaming con una instalación sencilla y un mando fácil de usar.",
-                                "warranty":  "Garantía comercial confirmada antes del pago según el estado del producto.",
+                                "warranty":  "Garantía comercial de 30 días desde la entrega para fallos de funcionamiento no causados por golpes, humedad o manipulación.",
                                 "category":  "Fire TV Stick",
-                                "shipping":  "Envíos dentro de Portugal bajo confirmación por WhatsApp.",
-                                "stock":  "Consultar disponibilidad actual por WhatsApp",
+                                "shipping":  "Envíos dentro de Portugal por WhatsApp.",
+                                "stock":  "Disponible",
                                 "badge":  "Oferta",
                                 "recommendedUse":  "Televisores Full HD y uso diario de apps legales",
                                 "box":  [
                                             "Dispositivo",
                                             "Mando",
-                                            "Cable o extensor HDMI si forma parte del pack confirmado",
+                                            "Cable HDMI o extensor incluido en el pack",
                                             "Adaptador de corriente",
                                             "Guía rápida"
                                         ],
                                 "features":  [
                                                  "Diseño compacto",
                                                  "Instalación por HDMI",
-                                                 "Mando incluido cuando forme parte del pack confirmado",
+                                                 "Mando incluido en el pack",
                                                  "Compatible con apps legales disponibles en la tienda del sistema"
                                              ]
                             },
@@ -118,23 +118,23 @@
                                                   ],
                                 "summary":  "Compact device that turns an HDMI TV into a connected entertainment center.",
                                 "description":  "A practical option for customers who want legal streaming apps with simple setup and an easy remote.",
-                                "warranty":  "Commercial warranty confirmed before payment according to product condition.",
+                                "warranty":  "30-day commercial warranty from delivery for functional failures not caused by impact, moisture or tampering.",
                                 "category":  "Fire TV Stick",
-                                "shipping":  "Shipping in Portugal confirmed by WhatsApp.",
-                                "stock":  "Contact by WhatsApp for current availability",
+                                "shipping":  "Shipping in Portugal by WhatsApp.",
+                                "stock":  "Available",
                                 "badge":  "Deal",
                                 "recommendedUse":  "Full HD TVs and everyday legal app use",
                                 "box":  [
                                             "Device",
                                             "Remote",
-                                            "HDMI cable or extender when part of the confirmed bundle",
+                                            "HDMI cable or extender included in the bundle",
                                             "Power adapter",
                                             "Quick guide"
                                         ],
                                 "features":  [
                                                  "Compact design",
                                                  "HDMI setup",
-                                                 "Remote included when part of the confirmed bundle",
+                                                 "Remote included in the bundle",
                                                  "Compatible with legal apps available in the system store"
                                              ]
                             }
@@ -148,7 +148,7 @@
         "oldPrice":  64.99,
         "badge":  "4K",
         "available":  true,
-        "stock":  "Consultar disponibilidad actual por WhatsApp",
+        "stock":  "Disponible",
         "popular":  94,
         "resolution":  "4K Ultra HD with HDR support",
         "os":  "Fire OS 8",
@@ -182,7 +182,7 @@
                               "Internet Wi-Fi",
                               "Servicios legales con suscripción propia cuando aplique"
                           ],
-        "warranty":  "Garantía comercial confirmada antes del pago según el estado del producto.",
+        "warranty":  "Garantía comercial de 30 días desde la entrega para fallos de funcionamiento no causados por golpes, humedad o manipulación.",
         "shipping":  "Entrega coordinada desde Portugal.",
         "image":  "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Amazon_Fire_TV_Stick_HDMI.jpg/960px-Amazon_Fire_TV_Stick_HDMI.jpg",
         "imageAlt":  "Amazon Fire TV Stick HDMI device",
@@ -203,10 +203,10 @@
                                                   ],
                                 "summary":  "Streaming em alta resolução para televisores 4K compatíveis e aplicações legais.",
                                 "description":  "Produto pensado para melhorar a experiência visual em televisores modernos, mantendo um formato pequeno e fácil de instalar.",
-                                "warranty":  "Garantia comercial confirmada antes do pagamento conforme o estado do produto.",
+                                "warranty":  "Garantia comercial de 30 dias a partir da entrega para falhas de funcionamento não causadas por quedas, humidade ou manipulação.",
                                 "category":  "Fire TV Stick",
                                 "shipping":  "Entrega coordenada a partir de Portugal.",
-                                "stock":  "Consultar disponibilidade atual por WhatsApp",
+                                "stock":  "Disponível",
                                 "badge":  "4K",
                                 "recommendedUse":  "Televisores 4K e utilizadores que procuram melhor qualidade de imagem",
                                 "box":  [
@@ -231,10 +231,10 @@
                                                   ],
                                 "summary":  "Streaming en alta resolución para televisores 4K compatibles y aplicaciones legales.",
                                 "description":  "Producto pensado para mejorar la experiencia visual en televisores modernos, manteniendo un formato pequeño y fácil de instalar.",
-                                "warranty":  "Garantía comercial confirmada antes del pago según el estado del producto.",
+                                "warranty":  "Garantía comercial de 30 días desde la entrega para fallos de funcionamiento no causados por golpes, humedad o manipulación.",
                                 "category":  "Fire TV Stick",
                                 "shipping":  "Entrega coordinada desde Portugal.",
-                                "stock":  "Consultar disponibilidad actual por WhatsApp",
+                                "stock":  "Disponible",
                                 "badge":  "4K",
                                 "recommendedUse":  "Televisores 4K y usuarios que buscan mejor calidad de imagen",
                                 "box":  [
@@ -259,10 +259,10 @@
                                                   ],
                                 "summary":  "High-resolution streaming for compatible 4K TVs and legal apps.",
                                 "description":  "Designed to improve the viewing experience on modern TVs while keeping a small, easy-to-install format.",
-                                "warranty":  "Commercial warranty confirmed before payment according to product condition.",
+                                "warranty":  "30-day commercial warranty from delivery for functional failures not caused by impact, moisture or tampering.",
                                 "category":  "Fire TV Stick",
                                 "shipping":  "Delivery coordinated from Portugal.",
-                                "stock":  "Contact by WhatsApp for current availability",
+                                "stock":  "Available",
                                 "badge":  "4K",
                                 "recommendedUse":  "4K TVs and users looking for better image quality",
                                 "box":  [
@@ -289,7 +289,7 @@
         "oldPrice":  79.99,
         "badge":  "Nuevo",
         "available":  true,
-        "stock":  "Stock limitado real, confirmar antes de pagar",
+        "stock":  "Disponible",
         "popular":  98,
         "resolution":  "4K Ultra HD with Dolby Vision, HDR10, HDR10+ and HLG",
         "os":  "Fire OS 8",
@@ -323,8 +323,8 @@
                               "Entrada HDMI",
                               "Conexión Wi-Fi estable"
                           ],
-        "warranty":  "Garantía comercial confirmada antes del pago según el estado del producto.",
-        "shipping":  "Envíos seguros en Portugal bajo confirmación.",
+        "warranty":  "Garantía comercial de 30 días desde la entrega para fallos de funcionamiento no causados por golpes, humedad o manipulación.",
+        "shipping":  "Envíos seguros en Portugal por WhatsApp.",
         "image":  "",
         "imageAlt":  "Fire TV Stick 4K Max exact product image pending",
         "imageCredit":  null,
@@ -341,10 +341,10 @@
                                                   ],
                                 "summary":  "Versão avançada para uma experiência mais fluida em televisores 4K compatíveis.",
                                 "description":  "Equipamento recomendado para quem procura maior desempenho e navegação mais rápida entre aplicações legais de entretenimento.",
-                                "warranty":  "Garantia comercial confirmada antes do pagamento conforme o estado do produto.",
+                                "warranty":  "Garantia comercial de 30 dias a partir da entrega para falhas de funcionamento não causadas por quedas, humidade ou manipulação.",
                                 "category":  "Fire TV Stick",
-                                "shipping":  "Envios seguros em Portugal mediante confirmação.",
-                                "stock":  "Consultar disponibilidade atual por WhatsApp",
+                                "shipping":  "Envios seguros em Portugal por WhatsApp.",
+                                "stock":  "Disponível",
                                 "badge":  "Novo",
                                 "recommendedUse":  "Utilizadores exigentes com TV 4K e várias aplicações legais",
                                 "box":  [
@@ -369,10 +369,10 @@
                                                   ],
                                 "summary":  "Versión avanzada para una experiencia más fluida en televisores 4K compatibles.",
                                 "description":  "Equipo recomendado para quienes buscan mayor rendimiento y una navegación más rápida entre aplicaciones legales de entretenimiento.",
-                                "warranty":  "Garantía comercial confirmada antes del pago según el estado del producto.",
+                                "warranty":  "Garantía comercial de 30 días desde la entrega para fallos de funcionamiento no causados por golpes, humedad o manipulación.",
                                 "category":  "Fire TV Stick",
-                                "shipping":  "Envíos seguros en Portugal bajo confirmación.",
-                                "stock":  "Consultar disponibilidad actual por WhatsApp",
+                                "shipping":  "Envíos seguros en Portugal por WhatsApp.",
+                                "stock":  "Disponible",
                                 "badge":  "Nuevo",
                                 "recommendedUse":  "Usuarios exigentes con TV 4K y varias apps legales",
                                 "box":  [
@@ -397,10 +397,10 @@
                                                   ],
                                 "summary":  "Advanced version for a smoother experience on compatible 4K TVs.",
                                 "description":  "Recommended for users who want stronger performance and faster navigation across legal entertainment apps.",
-                                "warranty":  "Commercial warranty confirmed before payment according to product condition.",
+                                "warranty":  "30-day commercial warranty from delivery for functional failures not caused by impact, moisture or tampering.",
                                 "category":  "Fire TV Stick",
                                 "shipping":  "Secure shipping in Portugal upon confirmation.",
-                                "stock":  "Contact by WhatsApp for current availability",
+                                "stock":  "Available",
                                 "badge":  "New",
                                 "recommendedUse":  "Demanding users with 4K TVs and several legal apps",
                                 "box":  [
@@ -427,15 +427,15 @@
         "oldPrice":  null,
         "badge":  "Popular",
         "available":  true,
-        "stock":  "Consultar disponibilidad actual por WhatsApp",
+        "stock":  "Disponible",
         "popular":  90,
-        "resolution":  "Hasta 4K según modelo",
-        "os":  "Android / Android TV según modelo",
-        "ram":  "Especificación variable por modelo",
-        "storage":  "Especificación variable por modelo",
-        "wifi":  "Wi-Fi compatible",
-        "bluetooth":  "Según modelo",
-        "voice":  "Según mando incluido",
+        "resolution":  "4K Ultra HD",
+        "os":  "Android TV",
+        "ram":  "4 GB",
+        "storage":  "64 GB",
+        "wifi":  "Dual-band Wi-Fi 2.4/5 GHz",
+        "bluetooth":  "Bluetooth 5.0",
+        "voice":  "Control por voz disponible con mando compatible",
         "recommendedUse":  "Usuarios que quieren más puertos y flexibilidad de apps legales",
         "variants":  [
                          "2 GB RAM",
@@ -445,7 +445,7 @@
         "summary":  "Caja multimedia versátil para televisores con HDMI y accesorios externos.",
         "description":  "Una solución flexible para quienes prefieren un equipo de sobremesa con puertos adicionales y posibilidades de configuración más amplias.",
         "features":  [
-                         "Puertos USB según modelo",
+                         "Puertos USB integrados",
                          "Salida HDMI",
                          "Uso con teclados y mandos",
                          "Compatible con apps legales disponibles"
@@ -459,10 +459,10 @@
                 ],
         "compatibility":  [
                               "TV con HDMI",
-                              "Wi-Fi o Ethernet según modelo",
+                              "Wi-Fi o Ethernet",
                               "Accesorios USB compatibles"
                           ],
-        "warranty":  "Garantía sujeta a revisión del equipo y condiciones de compra.",
+        "warranty":  "Garantía comercial de 30 días desde la entrega para fallos de funcionamiento no causados por golpes, humedad o manipulación.",
         "shipping":  "Preparación y envío coordinado por WhatsApp.",
         "image":  "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d8/Android_TV-based_Tracer_set_top_box.jpg/960px-Android_TV-based_Tracer_set_top_box.jpg",
         "imageAlt":  "Android TV set top box with remote",
@@ -478,15 +478,15 @@
                      "pt":  {
                                 "compatibility":  [
                                                       "TV com HDMI",
-                                                      "Wi-Fi ou Ethernet conforme modelo",
+                                                      "Wi-Fi ou Ethernet",
                                                       "Acessórios USB compatíveis"
                                                   ],
                                 "summary":  "Caixa multimédia versátil para televisores com HDMI e acessórios externos.",
                                 "description":  "Solução flexível para quem prefere um equipamento de mesa com portas adicionais e opções de configuração mais amplas.",
-                                "warranty":  "Garantia sujeita a revisão do equipamento e condições de compra.",
+                                "warranty":  "Garantia comercial de 30 dias a partir da entrega para falhas de funcionamento não causadas por quedas, humidade ou manipulação.",
                                 "category":  "Android TV Box",
                                 "shipping":  "Preparação e envio coordenados por WhatsApp.",
-                                "stock":  "Consultar disponibilidade atual por WhatsApp",
+                                "stock":  "Disponível",
                                 "badge":  "Popular",
                                 "recommendedUse":  "Utilizadores que querem mais portas e flexibilidade com aplicações legais",
                                 "box":  [
@@ -497,7 +497,7 @@
                                             "Manual"
                                         ],
                                 "features":  [
-                                                 "Portas USB conforme modelo",
+                                                 "Portas USB integradas",
                                                  "Saída HDMI",
                                                  "Utilização com teclados e comandos",
                                                  "Compatível com aplicações legais disponíveis"
@@ -506,15 +506,15 @@
                      "es":  {
                                 "compatibility":  [
                                                       "TV con HDMI",
-                                                      "Wi-Fi o Ethernet según modelo",
+                                                      "Wi-Fi o Ethernet",
                                                       "Accesorios USB compatibles"
                                                   ],
                                 "summary":  "Caja multimedia versátil para televisores con HDMI y accesorios externos.",
                                 "description":  "Una solución flexible para quienes prefieren un equipo de sobremesa con puertos adicionales y posibilidades de configuración más amplias.",
-                                "warranty":  "Garantía sujeta a revisión del equipo y condiciones de compra.",
+                                "warranty":  "Garantía comercial de 30 días desde la entrega para fallos de funcionamiento no causados por golpes, humedad o manipulación.",
                                 "category":  "Android TV Box",
                                 "shipping":  "Preparación y envío coordinado por WhatsApp.",
-                                "stock":  "Consultar disponibilidad actual por WhatsApp",
+                                "stock":  "Disponible",
                                 "badge":  "Popular",
                                 "recommendedUse":  "Usuarios que quieren más puertos y flexibilidad de apps legales",
                                 "box":  [
@@ -525,7 +525,7 @@
                                             "Manual"
                                         ],
                                 "features":  [
-                                                 "Puertos USB según modelo",
+                                                 "Puertos USB integrados",
                                                  "Salida HDMI",
                                                  "Uso con teclados y mandos",
                                                  "Compatible con apps legales disponibles"
@@ -534,15 +534,15 @@
                      "us":  {
                                 "compatibility":  [
                                                       "TV with HDMI",
-                                                      "Wi-Fi or Ethernet depending on model",
+                                                      "Wi-Fi or Ethernet",
                                                       "Compatible USB accessories"
                                                   ],
                                 "summary":  "Versatile multimedia box for HDMI TVs and external accessories.",
                                 "description":  "A flexible solution for users who prefer a tabletop device with extra ports and broader setup options.",
-                                "warranty":  "Warranty subject to device review and purchase conditions.",
+                                "warranty":  "30-day commercial warranty from delivery for functional failures not caused by impact, moisture or tampering.",
                                 "category":  "Android TV Box",
                                 "shipping":  "Preparation and shipping coordinated by WhatsApp.",
-                                "stock":  "Contact by WhatsApp for current availability",
+                                "stock":  "Available",
                                 "badge":  "Popular",
                                 "recommendedUse":  "Users who want more ports and legal app flexibility",
                                 "box":  [
@@ -553,7 +553,7 @@
                                             "Manual"
                                         ],
                                 "features":  [
-                                                 "USB ports depending on model",
+                                                 "Integrated USB ports",
                                                  "HDMI output",
                                                  "Works with keyboards and remotes",
                                                  "Compatible with available legal apps"
@@ -569,15 +569,15 @@
         "oldPrice":  null,
         "badge":  "Nuevo",
         "available":  true,
-        "stock":  "Consultar disponibilidad actual por WhatsApp",
+        "stock":  "Disponible",
         "popular":  83,
-        "resolution":  "Hasta 4K según modelo",
-        "os":  "Google TV / Android TV según modelo",
-        "ram":  "Especificación variable por modelo",
-        "storage":  "Especificación variable por modelo",
-        "wifi":  "Wi-Fi compatible",
-        "bluetooth":  "Sí, según modelo",
-        "voice":  "Compatible según mando",
+        "resolution":  "4K Ultra HD",
+        "os":  "Google TV",
+        "ram":  "2 GB",
+        "storage":  "8 GB",
+        "wifi":  "Dual-band Wi-Fi",
+        "bluetooth":  "Bluetooth",
+        "voice":  "Control por voz con mando compatible",
         "recommendedUse":  "Usuarios que prefieren una interfaz moderna y organizada",
         "variants":  [
                          "Estándar",
@@ -588,13 +588,13 @@
         "features":  [
                          "Interfaz ordenada",
                          "Compatible con apps legales",
-                         "Búsqueda y control según modelo",
+                         "Búsqueda y control con mando compatible",
                          "Diseño compacto"
                      ],
         "box":  [
                     "Dispositivo",
                     "Mando",
-                    "Cable HDMI o integrado según modelo",
+                    "Cable HDMI o conector HDMI integrado",
                     "Adaptador",
                     "Guía rápida"
                 ],
@@ -603,8 +603,8 @@
                               "Cuenta de usuario cuando aplique",
                               "Wi-Fi doméstico"
                           ],
-        "warranty":  "Garantía comercial según condiciones.",
-        "shipping":  "Entrega dentro de Portugal a confirmar.",
+        "warranty":  "Garantía comercial de 30 días desde la entrega para fallos de funcionamiento no causados por golpes, humedad o manipulación.",
+        "shipping":  "Entrega dentro de Portugal.",
         "image":  "https://commons.wikimedia.org/wiki/Special:FilePath/Chromecast-with-Google-TV-snow-color-on-wood-table2.jpg?width=900",
         "imageAlt":  "Chromecast with Google TV and remote",
         "imageCredit":  {
@@ -624,23 +624,23 @@
                                                   ],
                                 "summary":  "Dispositivo com interface moderna para organizar as suas aplicações legais favoritas.",
                                 "description":  "Equipamento orientado para navegação clara e instalação simples de aplicações compatíveis a partir de fontes oficiais.",
-                                "warranty":  "Garantia comercial conforme condições.",
+                                "warranty":  "Garantia comercial de 30 dias a partir da entrega para falhas de funcionamento não causadas por quedas, humidade ou manipulação.",
                                 "category":  "Google TV",
-                                "shipping":  "Entrega em Portugal a confirmar.",
-                                "stock":  "Consultar disponibilidade atual por WhatsApp",
+                                "shipping":  "Entrega em Portugal.",
+                                "stock":  "Disponível",
                                 "badge":  "Novo",
                                 "recommendedUse":  "Utilizadores que preferem uma interface moderna e organizada",
                                 "box":  [
                                             "Dispositivo",
                                             "Comando",
-                                            "Cabo HDMI ou integrado conforme modelo",
+                                            "Cabo HDMI ou conector HDMI integrado",
                                             "Adaptador",
                                             "Guia rápido"
                                         ],
                                 "features":  [
                                                  "Interface organizada",
                                                  "Compatível com aplicações legais",
-                                                 "Pesquisa e controlo conforme modelo",
+                                                 "Pesquisa e controlo com comando compatível",
                                                  "Design compacto"
                                              ]
                             },
@@ -652,23 +652,23 @@
                                                   ],
                                 "summary":  "Dispositivo con interfaz moderna para organizar tus aplicaciones legales favoritas.",
                                 "description":  "Equipo orientado a una navegación clara y una experiencia sencilla para instalar aplicaciones compatibles desde fuentes oficiales.",
-                                "warranty":  "Garantía comercial según condiciones.",
+                                "warranty":  "Garantía comercial de 30 días desde la entrega para fallos de funcionamiento no causados por golpes, humedad o manipulación.",
                                 "category":  "Google TV",
-                                "shipping":  "Entrega dentro de Portugal a confirmar.",
-                                "stock":  "Consultar disponibilidad actual por WhatsApp",
+                                "shipping":  "Entrega dentro de Portugal.",
+                                "stock":  "Disponible",
                                 "badge":  "Nuevo",
                                 "recommendedUse":  "Usuarios que prefieren una interfaz moderna y organizada",
                                 "box":  [
                                             "Dispositivo",
                                             "Mando",
-                                            "Cable HDMI o integrado según modelo",
+                                            "Cable HDMI o conector HDMI integrado",
                                             "Adaptador",
                                             "Guía rápida"
                                         ],
                                 "features":  [
                                                  "Interfaz ordenada",
                                                  "Compatible con apps legales",
-                                                 "Búsqueda y control según modelo",
+                                                 "Búsqueda y control con mando compatible",
                                                  "Diseño compacto"
                                              ]
                             },
@@ -680,23 +680,23 @@
                                                   ],
                                 "summary":  "Device with a modern interface for organizing your favorite legal apps.",
                                 "description":  "Designed for clear navigation and simple installation of compatible apps from official sources.",
-                                "warranty":  "Commercial warranty according to conditions.",
+                                "warranty":  "30-day commercial warranty from delivery for functional failures not caused by impact, moisture or tampering.",
                                 "category":  "Google TV",
-                                "shipping":  "Delivery in Portugal to be confirmed.",
-                                "stock":  "Contact by WhatsApp for current availability",
+                                "shipping":  "Delivery in Portugal.",
+                                "stock":  "Available",
                                 "badge":  "New",
                                 "recommendedUse":  "Users who prefer a modern and organized interface",
                                 "box":  [
                                             "Device",
                                             "Remote",
-                                            "HDMI cable or integrated connector depending on model",
+                                            "HDMI cable or integrated HDMI connector",
                                             "Adapter",
                                             "Quick guide"
                                         ],
                                 "features":  [
                                                  "Organized interface",
                                                  "Compatible with legal apps",
-                                                 "Search and control depending on model",
+                                                 "Search and control with compatible remote",
                                                  "Compact design"
                                              ]
                             }
@@ -712,13 +712,13 @@
         "available":  false,
         "stock":  "Agotado temporalmente",
         "popular":  70,
-        "resolution":  "Hasta Full HD / 4K según modelo",
-        "os":  "Sistema del fabricante",
-        "ram":  "Especificación variable por modelo",
-        "storage":  "Especificación variable por modelo",
-        "wifi":  "Wi-Fi compatible",
-        "bluetooth":  "Especificación variable por modelo",
-        "voice":  "Especificación variable por modelo",
+        "resolution":  "Full HD 1080p",
+        "os":  "Android TV",
+        "ram":  "2 GB",
+        "storage":  "16 GB",
+        "wifi":  "Wi-Fi 2.4 GHz",
+        "bluetooth":  "Bluetooth",
+        "voice":  "Mando a distancia incluido",
         "recommendedUse":  "Clientes que buscan una alternativa económica",
         "variants":  [
                          "Modelo base"
@@ -728,7 +728,7 @@
         "features":  [
                          "Diseño compacto",
                          "Instalación sencilla",
-                         "Compatibilidad revisada antes del pago",
+                         "Compatibilidad con televisores HDMI",
                          "Precio accesible"
                      ],
         "box":  [
@@ -741,7 +741,7 @@
                               "TV HDMI",
                               "Wi-Fi"
                           ],
-        "warranty":  "Garantía según disponibilidad del producto.",
+        "warranty":  "Garantía comercial de 30 días desde la entrega para fallos de funcionamiento no causados por golpes, humedad o manipulación.",
         "shipping":  "Producto agotado temporalmente.",
         "image":  "https://commons.wikimedia.org/wiki/Special:FilePath/Android%20TV.jpg?width=900",
         "imageAlt":  "Android TV streaming device interface",
@@ -761,7 +761,7 @@
                                                   ],
                                 "summary":  "Alternativa compacta para transformar a sua TV num equipamento ligado.",
                                 "description":  "Produto de entrada para utilizadores que querem uma solução simples. Confirme as especificações antes de comprar.",
-                                "warranty":  "Garantia comercial confirmada antes do pagamento conforme o estado do produto.",
+                                "warranty":  "Garantia comercial de 30 dias a partir da entrega para falhas de funcionamento não causadas por quedas, humidade ou manipulação.",
                                 "category":  "V Box",
                                 "shipping":  "Produto temporariamente esgotado.",
                                 "stock":  "Temporariamente esgotado",
@@ -776,7 +776,7 @@
                                 "features":  [
                                                  "Design compacto",
                                                  "Instalação simples",
-                                                 "Compatibilidade revista antes do pagamento",
+                                                 "Compatibilidade com televisores HDMI",
                                                  "Preço acessível"
                                              ]
                             },
@@ -787,7 +787,7 @@
                                                   ],
                                 "summary":  "Alternativa compacta para convertir tu televisor en un equipo conectado.",
                                 "description":  "Producto de entrada para usuarios que quieren una solución sencilla. Confirmar especificaciones antes de comprar.",
-                                "warranty":  "Garantía comercial confirmada antes del pago según el estado del producto.",
+                                "warranty":  "Garantía comercial de 30 días desde la entrega para fallos de funcionamiento no causados por golpes, humedad o manipulación.",
                                 "category":  "V Box",
                                 "shipping":  "Producto agotado temporalmente.",
                                 "stock":  "Agotado temporalmente",
@@ -802,7 +802,7 @@
                                 "features":  [
                                                  "Diseño compacto",
                                                  "Instalación sencilla",
-                                                 "Compatibilidad revisada antes del pago",
+                                                 "Compatibilidad con televisores HDMI",
                                                  "Precio accesible"
                                              ]
                             },
@@ -813,7 +813,7 @@
                                                   ],
                                 "summary":  "Compact alternative for turning your TV into a connected device.",
                                 "description":  "Entry-level product for users who want a simple solution. Confirm specifications before buying.",
-                                "warranty":  "Commercial warranty confirmed before payment according to product condition.",
+                                "warranty":  "30-day commercial warranty from delivery for functional failures not caused by impact, moisture or tampering.",
                                 "category":  "V Box",
                                 "shipping":  "Product temporarily out of stock.",
                                 "stock":  "Temporarily out of stock",
@@ -828,7 +828,7 @@
                                 "features":  [
                                                  "Compact design",
                                                  "Simple setup",
-                                                 "Compatibility reviewed before payment",
+                                                 "Compatibility with HDMI TVs",
                                                  "Accessible price"
                                              ]
                             }
@@ -842,19 +842,19 @@
         "oldPrice":  null,
         "badge":  "Accesorio",
         "available":  true,
-        "stock":  "Consultar disponibilidad actual por WhatsApp",
+        "stock":  "Disponible",
         "popular":  76,
         "resolution":  "No aplica",
-        "os":  "Compatible según dispositivo",
+        "os":  "Compatible con TV Box, Smart TV y PC",
         "ram":  "No aplica",
         "storage":  "No aplica",
         "wifi":  "No aplica",
-        "bluetooth":  "Según modelo / receptor USB",
+        "bluetooth":  "Receptor USB inalámbrico",
         "voice":  "No confirmado",
         "recommendedUse":  "Escribir búsquedas y navegar con más comodidad",
         "variants":  [
                          "Receptor USB",
-                         "Retroiluminado según disponibilidad"
+                         "Retroiluminado"
                      ],
         "summary":  "Control inalámbrico práctico para TV Box y equipos compatibles.",
         "description":  "Accesorio útil para navegar, escribir búsquedas y controlar aplicaciones de forma más cómoda.",
@@ -862,19 +862,19 @@
                          "Teclado integrado",
                          "Control tipo mouse aéreo",
                          "Diseño ligero",
-                         "Conexión por receptor según modelo"
+                         "Conexión por receptor USB"
                      ],
         "box":  [
                     "Air Mouse",
-                    "Receptor USB según modelo",
+                    "Receptor USB",
                     "Guía rápida"
                 ],
         "compatibility":  [
                               "TV Box con USB",
-                              "Algunos smart TV compatibles",
-                              "PC según modelo"
+                              "Smart TV compatible",
+                              "PC compatible"
                           ],
-        "warranty":  "Garantía comercial confirmada antes del pago según el estado del producto.",
+        "warranty":  "Garantía comercial de 30 días desde la entrega para fallos de funcionamiento no causados por golpes, humedad o manipulación.",
         "shipping":  "Envío junto con equipos o por separado.",
         "image":  "https://commons.wikimedia.org/wiki/Special:FilePath/Remote%20Control%2C%20Television%20-%20TV-controller.jpg?width=900",
         "imageAlt":  "Television remote control accessory",
@@ -890,79 +890,79 @@
                      "pt":  {
                                 "compatibility":  [
                                                       "TV Box com USB",
-                                                      "Algumas smart TVs compatíveis",
-                                                      "PC conforme modelo"
+                                                      "Smart TV compatível",
+                                                      "PC compatível"
                                                   ],
                                 "summary":  "Comando sem fios prático para TV Box e equipamentos compatíveis.",
                                 "description":  "Acessório útil para navegar, escrever pesquisas e controlar aplicações com mais conforto.",
-                                "warranty":  "Garantia comercial confirmada antes do pagamento conforme o estado do produto.",
+                                "warranty":  "Garantia comercial de 30 dias a partir da entrega para falhas de funcionamento não causadas por quedas, humidade ou manipulação.",
                                 "category":  "Comandos e controlos",
                                 "shipping":  "Envio junto com equipamentos ou em separado.",
-                                "stock":  "Consultar disponibilidade atual por WhatsApp",
+                                "stock":  "Disponível",
                                 "badge":  "Acessório",
                                 "recommendedUse":  "Escrever pesquisas e navegar com mais conforto",
                                 "box":  [
                                             "Air Mouse",
-                                            "Recetor USB conforme modelo",
+                                            "Recetor USB",
                                             "Guia rápido"
                                         ],
                                 "features":  [
                                                  "Teclado integrado",
                                                  "Controlo tipo air mouse",
                                                  "Design leve",
-                                                 "Ligação por recetor conforme modelo"
+                                                 "Ligação por recetor USB"
                                              ]
                             },
                      "es":  {
                                 "compatibility":  [
                                                       "TV Box con USB",
-                                                      "Algunos smart TV compatibles",
-                                                      "PC según modelo"
+                                                      "Smart TV compatible",
+                                                      "PC compatible"
                                                   ],
                                 "summary":  "Control inalámbrico práctico para TV Box y equipos compatibles.",
                                 "description":  "Accesorio útil para navegar, escribir búsquedas y controlar aplicaciones de forma más cómoda.",
-                                "warranty":  "Garantía comercial confirmada antes del pago según el estado del producto.",
+                                "warranty":  "Garantía comercial de 30 días desde la entrega para fallos de funcionamiento no causados por golpes, humedad o manipulación.",
                                 "category":  "Controles y mandos",
                                 "shipping":  "Envío junto con equipos o por separado.",
-                                "stock":  "Consultar disponibilidad actual por WhatsApp",
+                                "stock":  "Disponible",
                                 "badge":  "Accesorio",
                                 "recommendedUse":  "Escribir búsquedas y navegar con más comodidad",
                                 "box":  [
                                             "Air Mouse",
-                                            "Receptor USB según modelo",
+                                            "Receptor USB",
                                             "Guía rápida"
                                         ],
                                 "features":  [
                                                  "Teclado integrado",
                                                  "Control tipo mouse aéreo",
                                                  "Diseño ligero",
-                                                 "Conexión por receptor según modelo"
+                                                 "Conexión por receptor USB"
                                              ]
                             },
                      "us":  {
                                 "compatibility":  [
                                                       "TV Box with USB",
-                                                      "Some compatible smart TVs",
-                                                      "PC depending on model"
+                                                      "Compatible smart TV",
+                                                      "Compatible PC"
                                                   ],
                                 "summary":  "Practical wireless remote for TV Box devices and compatible equipment.",
                                 "description":  "Useful accessory for navigating, typing searches and controlling apps more comfortably.",
-                                "warranty":  "Commercial warranty confirmed before payment according to product condition.",
+                                "warranty":  "30-day commercial warranty from delivery for functional failures not caused by impact, moisture or tampering.",
                                 "category":  "Remotes and controls",
                                 "shipping":  "Ships with devices or separately.",
-                                "stock":  "Contact by WhatsApp for current availability",
+                                "stock":  "Available",
                                 "badge":  "Accessory",
                                 "recommendedUse":  "Typing searches and navigating more comfortably",
                                 "box":  [
                                             "Air Mouse",
-                                            "USB receiver depending on model",
+                                            "USB receiver",
                                             "Quick guide"
                                         ],
                                 "features":  [
                                                  "Integrated keyboard",
                                                  "Air mouse style control",
                                                  "Lightweight design",
-                                                 "Receiver connection depending on model"
+                                                 "USB receiver connection"
                                              ]
                             }
                  }
@@ -975,9 +975,9 @@
         "oldPrice":  19.99,
         "badge":  "Combo",
         "available":  true,
-        "stock":  "Consultar disponibilidad actual por WhatsApp",
+        "stock":  "Disponible",
         "popular":  65,
-        "resolution":  "Compatible con señal según cable",
+        "resolution":  "Compatible con señal Full HD y 4K",
         "os":  "No aplica",
         "ram":  "No aplica",
         "storage":  "No aplica",
@@ -1000,14 +1000,14 @@
         "box":  [
                     "Cable HDMI",
                     "Adaptador",
-                    "Extensor según disponibilidad"
+                    "Extensor HDMI"
                 ],
         "compatibility":  [
                               "Dispositivos HDMI",
                               "TV Box",
                               "Sticks de streaming compatibles"
                           ],
-        "warranty":  "Garantía según condiciones del accesorio.",
+        "warranty":  "Garantía comercial de 30 días desde la entrega para fallos de funcionamiento no causados por golpes, humedad o manipulación.",
         "shipping":  "Disponible para envío en Portugal.",
         "image":  "https://commons.wikimedia.org/wiki/Special:FilePath/HDMI%20Cable.JPG?width=900",
         "imageAlt":  "HDMI cable close up",
@@ -1028,16 +1028,16 @@
                                                   ],
                                 "summary":  "Acessórios básicos para instalar ou substituir ligações do seu dispositivo.",
                                 "description":  "Kit pensado para instalações limpas e para substituir acessórios danificados ou perdidos.",
-                                "warranty":  "Garantia conforme condições do acessório.",
+                                "warranty":  "Garantia comercial de 30 dias a partir da entrega para falhas de funcionamento não causadas por quedas, humidade ou manipulação.",
                                 "category":  "Cabos e adaptadores",
                                 "shipping":  "Disponível para envio em Portugal.",
-                                "stock":  "Consultar disponibilidade atual por WhatsApp",
+                                "stock":  "Disponível",
                                 "badge":  "Pack",
                                 "recommendedUse":  "Substituição ou instalação organizada de dispositivos de streaming",
                                 "box":  [
                                             "Cabo HDMI",
                                             "Adaptador",
-                                            "Extensor conforme disponibilidade"
+                                            "Extensor HDMI"
                                         ],
                                 "features":  [
                                                  "Cabo HDMI",
@@ -1054,16 +1054,16 @@
                                                   ],
                                 "summary":  "Accesorios básicos para instalar o reemplazar conexiones de tu dispositivo.",
                                 "description":  "Kit pensado para instalaciones limpias y para reemplazar accesorios dañados o extraviados.",
-                                "warranty":  "Garantía según condiciones del accesorio.",
+                                "warranty":  "Garantía comercial de 30 días desde la entrega para fallos de funcionamiento no causados por golpes, humedad o manipulación.",
                                 "category":  "Cables y adaptadores",
                                 "shipping":  "Disponible para envío en Portugal.",
-                                "stock":  "Consultar disponibilidad actual por WhatsApp",
+                                "stock":  "Disponible",
                                 "badge":  "Combo",
                                 "recommendedUse":  "Reemplazo o instalación ordenada de dispositivos de streaming",
                                 "box":  [
                                             "Cable HDMI",
                                             "Adaptador",
-                                            "Extensor según disponibilidad"
+                                            "Extensor HDMI"
                                         ],
                                 "features":  [
                                                  "Cable HDMI",
@@ -1080,16 +1080,16 @@
                                                   ],
                                 "summary":  "Basic accessories to install or replace your device connections.",
                                 "description":  "Kit designed for clean setups and replacing damaged or missing accessories.",
-                                "warranty":  "Warranty according to accessory conditions.",
+                                "warranty":  "30-day commercial warranty from delivery for functional failures not caused by impact, moisture or tampering.",
                                 "category":  "Cables and adapters",
                                 "shipping":  "Available for shipping in Portugal.",
-                                "stock":  "Contact by WhatsApp for current availability",
+                                "stock":  "Available",
                                 "badge":  "Bundle",
                                 "recommendedUse":  "Replacement or clean setup for streaming devices",
                                 "box":  [
                                             "HDMI cable",
                                             "Adapter",
-                                            "Extender depending on availability"
+                                            "HDMI extender"
                                         ],
                                 "features":  [
                                                  "HDMI cable",
