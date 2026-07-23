@@ -165,6 +165,7 @@ textarea.input { min-height: 130px; padding-top: 12px; resize: vertical; }
 .vpn-affiliate-carousel-section { padding: 64px 0; background: white; }
 .vpn-affiliate-carousel { position: relative; min-height: 520px; border-radius: 8px; overflow: hidden; background: #0b1220; box-shadow: var(--shadow); }
 .vpn-affiliate-carousel-hero { min-height: 560px; box-shadow: 0 28px 80px rgba(17,24,39,.22); }
+.vpn-affiliate-carousel-embed { min-height: 360px; align-self: stretch; }
 .vpn-affiliate-track, .vpn-affiliate-slide { position: absolute; inset: 0; }
 .vpn-affiliate-slide { opacity: 0; transform: scale(1.02); transition: opacity .55s ease, transform .9s ease; }
 .vpn-affiliate-slide.is-active { opacity: 1; transform: scale(1); z-index: 1; }
@@ -209,6 +210,7 @@ textarea.input { min-height: 130px; padding-top: 12px; resize: vertical; }
 .vpn-cta-final p, .vpn-cta-final .affiliate-note { color: #d1d5db; }
 .vpn-faq-block { margin-top: 8px; }
 .vpn-product-card { margin-top: 24px; padding: 22px; border-left: 4px solid var(--green); }
+.vpn-product-card .vpn-affiliate-carousel-embed { min-height: 240px; margin: 18px 0; }
 .mobile-affiliate-bar { display: none; position: fixed; left: 12px; right: 12px; bottom: 12px; z-index: 90; background: white; border: 1px solid var(--line); box-shadow: 0 18px 50px rgba(17,24,39,.22); border-radius: 8px; padding: 10px 52px 10px 10px; }
 .mobile-affiliate-bar.show { display: block; }
 .mobile-affiliate-bar .btn { width: 100%; }
@@ -245,6 +247,7 @@ textarea.input { min-height: 130px; padding-top: 12px; resize: vertical; }
   .vpn-hero { padding-top: 56px; }
   .vpn-affiliate-carousel { min-height: 420px; }
   .vpn-affiliate-carousel-hero { min-height: 500px; }
+  .vpn-affiliate-carousel-embed { min-height: 340px; }
   .vpn-showcase { min-height: 500px; }
   .controls { grid-template-columns: 1fr 1fr; }
   .nav-links { display: none; }
@@ -270,6 +273,7 @@ textarea.input { min-height: 130px; padding-top: 12px; resize: vertical; }
   .vpn-affiliate-carousel-section { padding: 42px 0; }
   .vpn-affiliate-carousel { min-height: 270px; }
   .vpn-affiliate-carousel-hero { min-height: 300px; }
+  .vpn-affiliate-carousel-embed, .vpn-product-card .vpn-affiliate-carousel-embed { min-height: 230px; }
   .vpn-actions { display: grid; }
   .vpn-showcase, .vpn-card-wide .vpn-showcase { min-height: 440px; }
   .vpn-tv-overlay { left: 12%; right: 17%; top: 18%; height: 36%; }
