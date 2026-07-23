@@ -274,6 +274,13 @@ const ipvanishScreens = [
   `${basePath}/assets/images/ipvanish/ipvanish-app-screen-3.webp`,
   `${basePath}/assets/images/ipvanish/ipvanish-app-screen-4.webp`
 ];
+const ipvanishCarouselImages = [
+  `${basePath}/assets/images/ipvanish/carousel/ipvanish-devices.png`,
+  `${basePath}/assets/images/ipvanish/carousel/ipvanish-mobile-app.png`,
+  `${basePath}/assets/images/ipvanish/carousel/ipvanish-firestick-green.png`,
+  `${basePath}/assets/images/ipvanish/carousel/ipvanish-tv-room.png`,
+  `${basePath}/assets/images/ipvanish/carousel/ipvanish-install-firestick.png`
+];
 const relatedGuideSlugs = ['privacidad-android-tv-box','proteger-fire-tv-stick-internet','tv-box-redes-wifi-seguras','vpn-dispositivo-streaming','red-domestica-segura-tv-box'];
 const ipvanishContent = {
   pt: {
@@ -401,20 +408,14 @@ function ipvanishVisual(priority='lazy'){
   const caption = state.lang==='pt' ? 'Imagem realista de utilização em TV com interface visual do IPVanish.' : state.lang==='es' ? 'Imagen realista de uso en TV con interfaz visual de IPVanish.' : 'Realistic TV usage image with IPVanish visual interface.';
   return `<figure class="vpn-showcase"><div class="vpn-showcase-bg"><img src="${ipvanishImage}" alt="${alt}" width="1100" height="733" loading="${priority}" ${priority==='eager'?'fetchpriority="high"':''}></div><div class="vpn-tv-overlay"><img src="${ipvanishScreens[0]}" alt="${screenAlt}" width="300" height="650" loading="${priority}" ${priority==='eager'?'fetchpriority="high"':''}></div><div class="vpn-stick" aria-hidden="true"></div><figcaption>${caption}</figcaption></figure>`;
 }
-function ipvanishScreenGallery(){
-  const title = state.lang==='pt' ? 'Imagens reais da aplicação IPVanish' : state.lang==='es' ? 'Imágenes reales de la aplicación IPVanish' : 'Real IPVanish app images';
-  const text = state.lang==='pt' ? 'Estas capturas correspondem à listagem oficial da aplicação IPVanish. Use-as como referência visual; funcionalidades e disponibilidade devem ser confirmadas no fornecedor.' : state.lang==='es' ? 'Estas capturas corresponden a la ficha oficial de la aplicación IPVanish. Úsalas como referencia visual; funciones y disponibilidad deben confirmarse con el proveedor.' : 'These screenshots come from the official IPVanish app listing. Use them as a visual reference; features and availability should be confirmed with the provider.';
-  const alt = state.lang==='pt' ? 'Captura real da aplicação IPVanish' : state.lang==='es' ? 'Captura real de la aplicación IPVanish' : 'Real IPVanish app screenshot';
-  return `<section class="section compact"><div class="container vpn-screen-section"><div class="section-head"><div><h2>${title}</h2><p class="muted">${text}</p></div>${affiliateLink(tr('ipvanishPlans'),'screens','btn btn-primary btn-xl')}</div><div class="vpn-screen-grid">${ipvanishScreens.map((src,i)=>`<figure><img src="${src}" alt="${alt} ${i+1}" width="300" height="650" loading="lazy"></figure>`).join('')}</div></div></section>`;
-}
-function ipvanishScreenGalleryInline(){
-  const title = state.lang==='pt' ? 'Capturas da aplicação' : state.lang==='es' ? 'Capturas de la aplicación' : 'App screenshots';
-  const text = state.lang==='pt' ? 'Referência visual com capturas oficiais da aplicação.' : state.lang==='es' ? 'Referencia visual con capturas oficiales de la aplicación.' : 'Visual reference with official app screenshots.';
-  const alt = state.lang==='pt' ? 'Captura real da aplicação IPVanish' : state.lang==='es' ? 'Captura real de la aplicación IPVanish' : 'Real IPVanish app screenshot';
-  return `<section class="vpn-inline-section"><div class="section-head"><div><h2>${title}</h2><p class="muted">${text}</p></div>${affiliateLink(tr('ipvanishPlans'),'screens','btn btn-primary btn-xl')}</div><div class="vpn-screen-grid">${ipvanishScreens.map((src,i)=>`<figure><img src="${src}" alt="${alt} ${i+1}" width="300" height="650" loading="lazy"></figure>`).join('')}</div></section>`;
-}
 function ipvanishBenefitStrip(c){
   return `<section class="vpn-benefit-strip"><div class="container vpn-trust">${c.trust.map(x=>`<div><strong>${x}</strong></div>`).join('')}</div></section>`;
+}
+function ipvanishAffiliateCarousel(){
+  const title = state.lang==='pt' ? 'Veja o IPVanish em dispositivos compatíveis' : state.lang==='es' ? 'Mira IPVanish en dispositivos compatibles' : 'See IPVanish on compatible devices';
+  const text = state.lang==='pt' ? 'Clique em qualquer imagem para consultar planos e informações atuais no site do fornecedor.' : state.lang==='es' ? 'Haz clic en cualquier imagen para consultar planes e información actual en el sitio del proveedor.' : 'Click any image to view current plans and information on the provider site.';
+  const alt = state.lang==='pt' ? 'Imagem promocional do IPVanish' : state.lang==='es' ? 'Imagen promocional de IPVanish' : 'IPVanish promotional image';
+  return `<section class="vpn-affiliate-carousel-section"><div class="container"><div class="section-head"><div><h2>${title}</h2><p class="muted">${text}</p></div>${affiliateLink(tr('ipvanishPlans'),'image_carousel_button','btn btn-primary btn-xl')}</div><div class="vpn-affiliate-carousel" aria-label="${title}"><div class="vpn-affiliate-track">${ipvanishCarouselImages.map((src,index)=>`<a class="vpn-affiliate-slide ${index===0?'is-active':''}" href="${affiliateUrl}" target="_blank" rel="sponsored nofollow noopener noreferrer" data-affiliate="ipvanish" data-placement="image_carousel_${index+1}" data-vpn-slide="${index}"><img src="${src}" alt="${alt} ${index+1}" loading="${index===0?'eager':'lazy'}"></a>`).join('')}</div><button class="carousel-btn vpn-affiliate-prev" type="button" aria-label="Previous image">‹</button><button class="carousel-btn vpn-affiliate-next" type="button" aria-label="Next image">›</button><div class="carousel-dots vpn-affiliate-dots">${ipvanishCarouselImages.map((_,index)=>`<button type="button" class="${index===0?'is-active':''}" data-vpn-dot="${index}" aria-label="Image ${index+1}"></button>`).join('')}</div></div></div></section>`;
 }
 function ipvanishCompatibilityBox(){
   const title = state.lang==='pt' ? 'Verifique a compatibilidade' : state.lang==='es' ? 'Verifica la compatibilidad' : 'Check compatibility';
@@ -465,12 +466,29 @@ function ipvanishGuideBlock(){
   const guideSections = [...c.sections, ...extra.sections];
   const guideFaq = [...c.faq, ...extra.faq];
   document.title = c.seoTitle;
-  return `<section class="vpn-hero"><div class="container vpn-hero-grid"><div class="vpn-hero-copy"><span class="eyebrow">${tr('ipvanishLabel')}</span><h1>${c.heroTitle}</h1><p class="lead">${c.heroText}</p><div class="hero-actions vpn-actions">${affiliateLink(tr('ipvanishPrimary'),'hero','btn btn-primary btn-xl')}<a class="btn btn-green btn-xl" href="#como-funciona">${tr('ipvanishHow')}</a></div></div>${ipvanishVisual('eager')}</div></section>${ipvanishBenefitStrip(c)}<section class="section" id="como-funciona"><div class="container article-layout vpn-article-layout">${ipvanishCompatibilityBox()}${ipvanishInstallCaptures()}${ipvanishStepBoxes()}${ipvanishCompareTable()}${ipvanishScreenGalleryInline()}${guideSections.map(([title,paras], index)=>`<article class="card legal-list vpn-article-card" id="vpn-section-${index}"><span>${String(index+1).padStart(2,'0')}</span><h2>${title}</h2>${paras.map(p=>`<p class="muted">${p}</p>`).join('')}</article>`).join('')}<section class="grid grid-4 vpn-benefit-grid">${c.benefits.map(([title,text])=>`<article class="card benefit"><h3>${title}</h3><p class="muted">${text}</p></article>`).join('')}</section><section class="vpn-cta card"><h2>${state.lang==='pt'?'Adicione uma camada de privacidade à sua ligação':state.lang==='es'?'Añade una capa de privacidad a tu conexión':'Add a privacy layer to your connection'}</h2><p>${state.lang==='pt'?'Consulte as funcionalidades, aplicações disponíveis e condições atuais diretamente no site do IPVanish.':state.lang==='es'?'Consulta las funcionalidades, aplicaciones disponibles y condiciones actuales directamente en el sitio de IPVanish.':'Check current features, available apps and conditions directly on the IPVanish website.'}</p>${affiliateLink(tr('ipvanishPlans'),'article_final','btn btn-primary btn-xl')}</section><section class="vpn-faq-block"><h2>${tr('faqTitle')}</h2><div class="faq">${guideFaq.map(([q,a],i)=>`<details><summary>${q}</summary><p class="muted">${a}</p></details>`).join('')}</div></section><section class="vpn-cta card vpn-cta-final"><h2>${state.lang==='pt'?'Quer conhecer o IPVanish?':state.lang==='es'?'¿Quieres conocer IPVanish?':'Want to learn about IPVanish?'}</h2><p>${state.lang==='pt'?'Consulte no site oficial as aplicações disponíveis, funcionalidades atuais, preços e condições do serviço.':state.lang==='es'?'Consulta en el sitio oficial las aplicaciones disponibles, funcionalidades actuales, precios y condiciones del servicio.':'Check available apps, current features, prices and service terms on the official site.'}</p>${affiliateLink(tr('ipvanishFinal'),'article_final','btn btn-primary btn-xl')}</section><section><h2>${state.lang==='pt'?'Artigos relacionados':state.lang==='es'?'Artículos relacionados':'Related articles'}</h2><div class="grid grid-3">${relatedGuideSlugs.map(slug=>{ const i=guideMeta.findIndex(g=>g.slug===slug); const g=guideData[state.lang][i]; return `<a class="card benefit" href="${basePath}/guias/${slug}/"><strong>${g[0]}</strong><p class="muted">${g[1].slice(0,150)}...</p></a>`; }).join('')}</div></section></div></section><div class="mobile-affiliate-bar" id="mobile-affiliate-bar"><button type="button" id="mobile-affiliate-close">×</button>${affiliateLink(tr('ipvanishPrimary'),'mobile_bar','btn btn-primary')}</div>`;
+  return `<section class="vpn-hero"><div class="container vpn-hero-grid"><div class="vpn-hero-copy"><span class="eyebrow">${tr('ipvanishLabel')}</span><h1>${c.heroTitle}</h1><p class="lead">${c.heroText}</p><div class="hero-actions vpn-actions">${affiliateLink(tr('ipvanishPrimary'),'hero','btn btn-primary btn-xl')}<a class="btn btn-green btn-xl" href="#como-funciona">${tr('ipvanishHow')}</a></div></div>${ipvanishVisual('eager')}</div></section>${ipvanishBenefitStrip(c)}${ipvanishAffiliateCarousel()}<section class="section" id="como-funciona"><div class="container article-layout vpn-article-layout">${ipvanishCompatibilityBox()}${ipvanishInstallCaptures()}${ipvanishStepBoxes()}${ipvanishCompareTable()}${guideSections.map(([title,paras], index)=>`<article class="card legal-list vpn-article-card" id="vpn-section-${index}"><span>${String(index+1).padStart(2,'0')}</span><h2>${title}</h2>${paras.map(p=>`<p class="muted">${p}</p>`).join('')}</article>`).join('')}<section class="grid grid-4 vpn-benefit-grid">${c.benefits.map(([title,text])=>`<article class="card benefit"><h3>${title}</h3><p class="muted">${text}</p></article>`).join('')}</section><section class="vpn-cta card"><h2>${state.lang==='pt'?'Adicione uma camada de privacidade à sua ligação':state.lang==='es'?'Añade una capa de privacidad a tu conexión':'Add a privacy layer to your connection'}</h2><p>${state.lang==='pt'?'Consulte as funcionalidades, aplicações disponíveis e condições atuais diretamente no site do IPVanish.':state.lang==='es'?'Consulta las funcionalidades, aplicaciones disponibles y condiciones actuales directamente en el sitio de IPVanish.':'Check current features, available apps and conditions directly on the IPVanish website.'}</p>${affiliateLink(tr('ipvanishPlans'),'article_final','btn btn-primary btn-xl')}</section><section class="vpn-faq-block"><h2>${tr('faqTitle')}</h2><div class="faq">${guideFaq.map(([q,a],i)=>`<details><summary>${q}</summary><p class="muted">${a}</p></details>`).join('')}</div></section><section class="vpn-cta card vpn-cta-final"><h2>${state.lang==='pt'?'Quer conhecer o IPVanish?':state.lang==='es'?'¿Quieres conocer IPVanish?':'Want to learn about IPVanish?'}</h2><p>${state.lang==='pt'?'Consulte no site oficial as aplicações disponíveis, funcionalidades atuais, preços e condições do serviço.':state.lang==='es'?'Consulta en el sitio oficial las aplicaciones disponibles, funcionalidades actuales, precios y condiciones del servicio.':'Check available apps, current features, prices and service terms on the official site.'}</p>${affiliateLink(tr('ipvanishFinal'),'article_final','btn btn-primary btn-xl')}</section><section><h2>${state.lang==='pt'?'Artigos relacionados':state.lang==='es'?'Artículos relacionados':'Related articles'}</h2><div class="grid grid-3">${relatedGuideSlugs.map(slug=>{ const i=guideMeta.findIndex(g=>g.slug===slug); const g=guideData[state.lang][i]; return `<a class="card benefit" href="${basePath}/guias/${slug}/"><strong>${g[0]}</strong><p class="muted">${g[1].slice(0,150)}...</p></a>`; }).join('')}</div></section></div></section><div class="mobile-affiliate-bar" id="mobile-affiliate-bar"><button type="button" id="mobile-affiliate-close">×</button>${affiliateLink(tr('ipvanishPrimary'),'mobile_bar','btn btn-primary')}</div>`;
 }
 function renderIpvanish(){
   document.querySelector('main').innerHTML = ipvanishGuideBlock();
   wireAffiliateTracking();
+  wireIpvanishAffiliateCarousel();
   wireMobileAffiliateBar();
+}
+function wireIpvanishAffiliateCarousel(){
+  const root = document.querySelector('.vpn-affiliate-carousel');
+  if(!root) return;
+  const slides = [...root.querySelectorAll('.vpn-affiliate-slide')];
+  const dots = [...root.querySelectorAll('[data-vpn-dot]')];
+  let current = 0;
+  const show = index => {
+    current = (index + slides.length) % slides.length;
+    slides.forEach((slide,i)=>slide.classList.toggle('is-active', i === current));
+    dots.forEach((dot,i)=>dot.classList.toggle('is-active', i === current));
+  };
+  root.querySelector('.vpn-affiliate-prev').onclick = () => show(current - 1);
+  root.querySelector('.vpn-affiliate-next').onclick = () => show(current + 1);
+  dots.forEach(dot=>dot.onclick = () => show(Number(dot.dataset.vpnDot)));
+  setInterval(()=>show(current + 1), 5600);
 }
 function renderAffiliateTransparency(){
   const title = tr('affiliateTransparency');
